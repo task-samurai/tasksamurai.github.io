@@ -7,23 +7,24 @@
     <link rel="icon" type="image/png" href="res/icons/samurai.png"/>
     <style>
         body {
+            width: 100%;
+            height: 100%;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #0052b3;
+            background-color: #1b52b3;
             color: white;
         }
 
         .container {
             text-align: center;
+            padding: 20px;
+            margin-top: 50px;
         }
 
         .logo {
             width: 700px;
+            max-width: 100%;
             height: auto;
             margin-bottom: 20px;
         }
@@ -36,14 +37,30 @@
             font-size: medium;
             max-width: 600px;
             margin: auto;
+            padding: 0 20px;
+        }
+
+        @media (min-width: 768px) {
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .container {
+                margin-top: 0;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <img src="res/icons/banner.png" alt="Company Logo" class="logo">
-        <p>Bringing you the best way to write software on serious software projects, very soon!</p>
-        <a href="mailto:tasksamurai.team@gmail.com">Get in touch!</p>
+        <p>
+            Bringing you the best way to write software on serious software projects, very soon!
+            <br/><a href="mailto:tasksamurai.team@gmail.com">Get in touch!
+        </p>
     </div>
 </body>
 </html>
