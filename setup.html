@@ -1,0 +1,2959 @@
+<!DOCTYPE html>
+<html lang="pt-PT" style="--inner1Vh: 9.76px; --sbw: 15px;">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5LD49EMYM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-B5LD49EMYM');
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Samurai Setup Guide</title>
+    <link rel="icon" type="image/png" href="res/icons/samurai.png" />
+    <style>
+        :root {
+            --ffsd: 0px;
+            --1vw: calc((100vw - var(--sbw, 0px)) / 100);
+            --1vh: var(--inner1Vh, 1vh);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .animated {
+                animation: none !important;
+            }
+        }
+
+        html {
+            zoom: var(--rzf, 1);
+            font-size: max(calc(min(var(--1vw, 1vw), 13.66px) * var(--rfso, 1)), var(--minfs, 0px));
+            -webkit-text-size-adjust: 100%;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-size: calc(1rem * var(--bfso, 1));
+        }
+
+        body,
+        html,
+        p,
+        ul,
+        ol,
+        li {
+            margin: 0;
+            padding: 0;
+            font-synthesis: none;
+            font-kerning: none;
+            font-variant-ligatures: none;
+            font-feature-settings: "kern" 0, "calt" 0, "liga" 0, "clig" 0, "dlig" 0, "hlig" 0;
+            font-family: unset;
+            -webkit-font-smoothing: subpixel-antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: geometricprecision;
+            white-space: normal;
+        }
+
+        li {
+            text-align: unset;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            -webkit-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-drag: none;
+            -webkit-touch-callout: none;
+        }
+
+        @font-face {
+            font-family: YAFdJt8dAY0-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJt8dAY0/0/OpenSans-Regular.5c41d7566d903b1b3684876.226618464330c99b64fcaf1d7142c1e7.woff2);
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        @font-face {
+            font-family: YAFdJt8dAY0-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJt8dAY0/0/OpenSans-Bold.3a947823b9ae357ee03f70de51.e532966f486645f74efaf7432e1d01c2.woff2);
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        @font-face {
+            font-family: YAFdJt8dAY0-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJt8dAY0/0/OpenSans-RegularItalic.f0f5fc29312b9fdb0.3caeb8725430f400cbc24c4707d72558.woff2);
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        @font-face {
+            font-family: YAFdJt8dAY0-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJt8dAY0/0/OpenSans-BoldItalic.7a6e87000efcb4c450fa.64dfd027222a62438bc2a4d821786c71.woff2);
+            font-style: italic;
+            font-weight: 700;
+        }
+
+        @font-face {
+            font-family: YAFdJt8dAY0-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJt8dAY0/0/OpenSans-Light.9dea3ba41b46d8a450c77a0bf.01bb491de5070339bf99832ce44c544d.woff2);
+            font-style: normal;
+            font-weight: 100;
+        }
+
+        @font-face {
+            font-family: YAFdJt8dAY0-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJt8dAY0/0/OpenSans-LightItalic.8ab728aad9406bb889a.a75cdabbb8dcdf033cc6b207c91608bf.woff2);
+            font-style: italic;
+            font-weight: 100;
+        }
+
+        @font-face {
+            font-family: YAFdJt8dAY0-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJt8dAY0/0/OpenSans-Light.9dea3ba41b46d8a450c77a0bf.01bb491de5070339bf99832ce44c544d.woff2);
+            font-style: normal;
+            font-weight: 200;
+        }
+
+        @font-face {
+            font-family: YAFdJt8dAY0-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJt8dAY0/0/OpenSans-LightItalic.8ab728aad9406bb889a.a75cdabbb8dcdf033cc6b207c91608bf.woff2);
+            font-style: italic;
+            font-weight: 200;
+        }
+
+        @font-face {
+            font-family: YAFdJt8dAY0-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJt8dAY0/0/OpenSans-Light.9dea3ba41b46d8a450c77a0bf.01bb491de5070339bf99832ce44c544d.woff2);
+            font-style: normal;
+            font-weight: 300;
+        }
+
+        @font-face {
+            font-family: YAFdJt8dAY0-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJt8dAY0/0/OpenSans-LightItalic.8ab728aad9406bb889a.a75cdabbb8dcdf033cc6b207c91608bf.woff2);
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        @font-face {
+            font-family: YAFdJt8dAY0-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJt8dAY0/0/OpenSans-Regular.5c41d7566d903b1b3684876.226618464330c99b64fcaf1d7142c1e7.woff2);
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        @font-face {
+            font-family: YAFdJt8dAY0-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJt8dAY0/0/OpenSans-RegularItalic.f0f5fc29312b9fdb0.3caeb8725430f400cbc24c4707d72558.woff2);
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        @font-face {
+            font-family: YAFdJt8dAY0-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJt8dAY0/0/OpenSans-Bold.3a947823b9ae357ee03f70de51.e532966f486645f74efaf7432e1d01c2.woff2);
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        @font-face {
+            font-family: YAFdJt8dAY0-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJt8dAY0/0/OpenSans-BoldItalic.7a6e87000efcb4c450fa.64dfd027222a62438bc2a4d821786c71.woff2);
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        @font-face {
+            font-family: YAFdJt8dAY0-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJt8dAY0/0/OpenSans-ExtraBold.03f9aaf16ab53f4b06a09.a26fb2e545ea4d91b9808446bd10482b.woff2);
+            font-style: normal;
+            font-weight: 800;
+        }
+
+        @font-face {
+            font-family: YAFdJt8dAY0-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJt8dAY0/0/OpenSans-ExtraBoldItalic.8b516c875dce3ec.93216375a15a0334d096957c3f1f2f0f.woff2);
+            font-style: italic;
+            font-weight: 800;
+        }
+
+        @font-face {
+            font-family: YAFdJt8dAY0-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJt8dAY0/0/OpenSans-ExtraBold.03f9aaf16ab53f4b06a09.a26fb2e545ea4d91b9808446bd10482b.woff2);
+            font-style: normal;
+            font-weight: 900;
+        }
+
+        @font-face {
+            font-family: YAFdJt8dAY0-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJt8dAY0/0/OpenSans-ExtraBoldItalic.8b516c875dce3ec.93216375a15a0334d096957c3f1f2f0f.woff2);
+            font-style: italic;
+            font-weight: 900;
+        }
+
+        @font-face {
+            font-family: YAFdJoNRMmU-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJoNRMmU/0/NunitoRegular.65bb0a158ee1967292ee4d1107.856a0aab6e7cffaf7ed9905c43a6799d.woff2);
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        @font-face {
+            font-family: YAFdJoNRMmU-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJoNRMmU/0/NunitoBold.6f47bcfc065790f02ed3cb8b51bef.1b9d773b35736fe427912098d9a5396c.woff2);
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        @font-face {
+            font-family: YAFdJoNRMmU-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJoNRMmU/0/Nunito-BoldItalic.4c787bc31c034cef9f5671.404d197cfe9800d651c8fad74c41ca04.woff2);
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        @font-face {
+            font-family: YAFdJoNRMmU-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJoNRMmU/0/Nunito-BoldItalic.4c787bc31c034cef9f5671.404d197cfe9800d651c8fad74c41ca04.woff2);
+            font-style: italic;
+            font-weight: 700;
+        }
+
+        @font-face {
+            font-family: YAFdJoNRMmU-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJoNRMmU/0/NunitoLight.c41c2502180f63ce383b6e3cc042.ac78fc02a0ae5982e928fa5fe3fe4b3f.woff2);
+            font-style: normal;
+            font-weight: 100;
+        }
+
+        @font-face {
+            font-family: YAFdJoNRMmU-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJoNRMmU/0/Nunito-BoldItalic.4c787bc31c034cef9f5671.404d197cfe9800d651c8fad74c41ca04.woff2);
+            font-style: italic;
+            font-weight: 100;
+        }
+
+        @font-face {
+            font-family: YAFdJoNRMmU-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJoNRMmU/0/NunitoLight.c41c2502180f63ce383b6e3cc042.ac78fc02a0ae5982e928fa5fe3fe4b3f.woff2);
+            font-style: normal;
+            font-weight: 200;
+        }
+
+        @font-face {
+            font-family: YAFdJoNRMmU-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJoNRMmU/0/Nunito-BoldItalic.4c787bc31c034cef9f5671.404d197cfe9800d651c8fad74c41ca04.woff2);
+            font-style: italic;
+            font-weight: 200;
+        }
+
+        @font-face {
+            font-family: YAFdJoNRMmU-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJoNRMmU/0/NunitoLight.c41c2502180f63ce383b6e3cc042.ac78fc02a0ae5982e928fa5fe3fe4b3f.woff2);
+            font-style: normal;
+            font-weight: 300;
+        }
+
+        @font-face {
+            font-family: YAFdJoNRMmU-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJoNRMmU/0/Nunito-BoldItalic.4c787bc31c034cef9f5671.404d197cfe9800d651c8fad74c41ca04.woff2);
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        @font-face {
+            font-family: YAFdJoNRMmU-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJoNRMmU/0/NunitoRegular.65bb0a158ee1967292ee4d1107.856a0aab6e7cffaf7ed9905c43a6799d.woff2);
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        @font-face {
+            font-family: YAFdJoNRMmU-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJoNRMmU/0/Nunito-BoldItalic.4c787bc31c034cef9f5671.404d197cfe9800d651c8fad74c41ca04.woff2);
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        @font-face {
+            font-family: YAFdJoNRMmU-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJoNRMmU/0/NunitoBold.6f47bcfc065790f02ed3cb8b51bef.1b9d773b35736fe427912098d9a5396c.woff2);
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        @font-face {
+            font-family: YAFdJoNRMmU-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJoNRMmU/0/Nunito-BoldItalic.4c787bc31c034cef9f5671.404d197cfe9800d651c8fad74c41ca04.woff2);
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        @font-face {
+            font-family: YAFdJoNRMmU-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJoNRMmU/0/NunitoBold.6f47bcfc065790f02ed3cb8b51bef.1b9d773b35736fe427912098d9a5396c.woff2);
+            font-style: normal;
+            font-weight: 800;
+        }
+
+        @font-face {
+            font-family: YAFdJoNRMmU-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJoNRMmU/0/Nunito-BoldItalic.4c787bc31c034cef9f5671.404d197cfe9800d651c8fad74c41ca04.woff2);
+            font-style: italic;
+            font-weight: 800;
+        }
+
+        @font-face {
+            font-family: YAFdJoNRMmU-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJoNRMmU/0/Nunito-Black.444a9206bffab75243dc822f79b.9796587a646c3c1c8a7b93893bdb7788.woff2);
+            font-style: normal;
+            font-weight: 900;
+        }
+
+        @font-face {
+            font-family: YAFdJoNRMmU-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YAFdJoNRMmU/0/Nunito-BlackItalic.de97fe02790068b25c78f.163ee63b6cf42e4daad743c29db6f055.woff2);
+            font-style: italic;
+            font-weight: 900;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YACgEZ1cb1Q/0/Arimo.7ac02a544211773d9636e056e9da6c35.7.f8f199f09526f79e87644ed227e0f651.woff2);
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YACgEZ1cb1Q/0/ArimoBold.927b7dca5b947f69cb8e835f7f743d.98c4d2c0223fc8474641c77f923528e9.woff2);
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YACgEZ1cb1Q/0/ArimoItalic.fa87472a877e70c5bce22e42be5c.d257a7100844bc3f98c9021168b6249e.woff2);
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YACgEZ1cb1Q/0/ArimoBoldItalic.08fb930e5cf38bab811efa91.1060345c54d396e76d73f1da7ee200bd.woff2);
+            font-style: italic;
+            font-weight: 700;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YACgEZ1cb1Q/0/Arimo.7ac02a544211773d9636e056e9da6c35.7.f8f199f09526f79e87644ed227e0f651.woff2);
+            font-style: normal;
+            font-weight: 100;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YACgEZ1cb1Q/0/ArimoItalic.fa87472a877e70c5bce22e42be5c.d257a7100844bc3f98c9021168b6249e.woff2);
+            font-style: italic;
+            font-weight: 100;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YACgEZ1cb1Q/0/Arimo.7ac02a544211773d9636e056e9da6c35.7.f8f199f09526f79e87644ed227e0f651.woff2);
+            font-style: normal;
+            font-weight: 200;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YACgEZ1cb1Q/0/ArimoItalic.fa87472a877e70c5bce22e42be5c.d257a7100844bc3f98c9021168b6249e.woff2);
+            font-style: italic;
+            font-weight: 200;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YACgEZ1cb1Q/0/Arimo.7ac02a544211773d9636e056e9da6c35.7.f8f199f09526f79e87644ed227e0f651.woff2);
+            font-style: normal;
+            font-weight: 300;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YACgEZ1cb1Q/0/ArimoItalic.fa87472a877e70c5bce22e42be5c.d257a7100844bc3f98c9021168b6249e.woff2);
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YACgEZ1cb1Q/0/Arimo.7ac02a544211773d9636e056e9da6c35.7.f8f199f09526f79e87644ed227e0f651.woff2);
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YACgEZ1cb1Q/0/ArimoItalic.fa87472a877e70c5bce22e42be5c.d257a7100844bc3f98c9021168b6249e.woff2);
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YACgEZ1cb1Q/0/ArimoBold.927b7dca5b947f69cb8e835f7f743d.98c4d2c0223fc8474641c77f923528e9.woff2);
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YACgEZ1cb1Q/0/ArimoBoldItalic.08fb930e5cf38bab811efa91.1060345c54d396e76d73f1da7ee200bd.woff2);
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YACgEZ1cb1Q/0/ArimoBold.927b7dca5b947f69cb8e835f7f743d.98c4d2c0223fc8474641c77f923528e9.woff2);
+            font-style: normal;
+            font-weight: 800;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YACgEZ1cb1Q/0/ArimoBoldItalic.08fb930e5cf38bab811efa91.1060345c54d396e76d73f1da7ee200bd.woff2);
+            font-style: italic;
+            font-weight: 800;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YACgEZ1cb1Q/0/ArimoBold.927b7dca5b947f69cb8e835f7f743d.98c4d2c0223fc8474641c77f923528e9.woff2);
+            font-style: normal;
+            font-weight: 900;
+        }
+
+        @font-face {
+            font-family: YACgEZ1cb1Q-0;
+            src: url(https://s3.amazonaws.com/font-public.canva.com/YACgEZ1cb1Q/0/ArimoBoldItalic.08fb930e5cf38bab811efa91.1060345c54d396e76d73f1da7ee200bd.woff2);
+            font-style: italic;
+            font-weight: 900;
+        }
+
+        @media (max-width: 375px) {
+            #tkxNpCNyhnCp3K8P {
+                grid-area: 2 / 2 / 3 / 3;
+                position: relative;
+            }
+
+            #GxkQ4wtsCNjLMa4z {
+                grid-template-columns: 0 484.44290414%;
+                left: -192.22145207%;
+                grid-template-rows: 0 100%;
+            }
+
+            #uhXZPDcXndoc2l0j {
+                grid-area: 2 / 3 / 3 / 4;
+                position: relative;
+            }
+
+            #XLTXmSwHYKvDmLDq {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(6.09360737em - var(--ffsd)));
+            }
+
+            #avzoSKBQ7AgdDk18 {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 6.09360737em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #XfS0xDAkgkmIUo1D {
+                min-width: 91.6rem;
+            }
+
+            #huwuiEGyX5OiS6aT {
+                grid-area: 4 / 2 / 5 / 5;
+                position: relative;
+            }
+
+            #U13SUCCSs8zuYNbf {
+                grid-template-columns: 0 44.63511498rem 2.19643671rem 44.63511498rem;
+                grid-template-rows: 0 minmax(9.63700888rem, max-content) minmax(6.4rem, max-content) minmax(7.20758838rem, max-content);
+            }
+
+            #Fx9Abi1KYQ8ZEgAM {
+                grid-area: 2 / 2 / 3 / 3;
+                position: relative;
+            }
+
+            #az3ybXnsbZHdozLM {
+                grid-template-columns: 4.26666667rem 91.46666667rem 4.26666667rem;
+                grid-template-rows: minmax(6.81915892rem, max-content) minmax(23.24459725rem, max-content) minmax(6.81915892rem, max-content);
+            }
+
+            #rMKZS8Y4vzo7oZqY {
+                min-height: calc(8.88524985 * var(--1vh, 1vh));
+            }
+
+            #l3nOBXDMTYczpuuS {
+                grid-area: 2 / 2 / 3 / 3;
+                position: relative;
+            }
+
+            #zUP7c42ShJ1WQxGf {
+                grid-template-columns: 0 203.94249876%;
+                left: -51.97124938%;
+                grid-template-rows: 0 100%;
+            }
+
+            #rOZoSQfzqL5rtHxj {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(5.40444267em - var(--ffsd)));
+            }
+
+            #Wdv6FTsmiM0Ru3Th {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 5.40444267em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #dSVodMzUk9Wc6TQh {
+                min-width: 91.6rem;
+            }
+
+            #LAoGKSt3ukRlRQaR {
+                grid-area: 2 / 2 / 3 / 12;
+                position: relative;
+            }
+
+            #LG1GeYtf8WdXude9 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.90666667em - var(--ffsd)));
+            }
+
+            #iZ2x67TxI1Rxmi7P {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 4.90666667em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #sA0temuITypdNhOO {
+                min-width: 91.6rem;
+            }
+
+            #wBiil3FV9tsOAKkw {
+                grid-area: 4 / 3 / 5 / 13;
+                position: relative;
+            }
+
+            #q7uUkUgO09clstn9 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(5.40444267em - var(--ffsd)));
+            }
+
+            #baz04lxsKJFlBb1l {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 5.40444267em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #Wyb3GOu1LJzqj5DU {
+                min-width: 91.6rem;
+            }
+
+            #ZPLV94ZTSh7x8cJI {
+                grid-area: 6 / 4 / 7 / 14;
+                position: relative;
+            }
+
+            #KlWxqpfyVf3qowfD {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.90666667em - var(--ffsd)));
+            }
+
+            #qb3o448LI7yidVFB {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.90666667em - var(--ffsd)));
+            }
+
+            #j7Y1fRW8HBWVjKg2 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.90666667em - var(--ffsd)));
+            }
+
+            #kUPNsKgAnTOfFsfk {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.90666667em - var(--ffsd)));
+            }
+
+            #lHDJEnOTJLGxf0cw {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 4.90666667em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #BxQHuMWQY8RJ2pgF {
+                min-width: 91.6rem;
+            }
+
+            #rC4yjIir31iTAxbm {
+                grid-area: 8 / 5 / 9 / 15;
+                position: relative;
+            }
+
+            #mmMO6SD8n2DHJ5ti {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(5.40444267em - var(--ffsd)));
+            }
+
+            #UFAOuyxH0vL4Fmet {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 5.40444267em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #jFHiQ7C5UM7dNoia {
+                min-width: 91.6rem;
+            }
+
+            #kf79IfqkFB0zrv1j {
+                grid-area: 10 / 6 / 11 / 16;
+                position: relative;
+            }
+
+            #CMlWGYMVusQ2o3dH {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.90666667em - var(--ffsd)));
+            }
+
+            #ocRJNLWO4vjMqUyH {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 4.90666667em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #rvAz1w4vpXFJybcM {
+                min-width: 91.6rem;
+            }
+
+            #MGcuOqgefUdrcAvH {
+                grid-area: 12 / 7 / 13 / 17;
+                position: relative;
+            }
+
+            #mVruP7H4YdImi6aE {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(5.40444267em - var(--ffsd)));
+            }
+
+            #n74p1eGLOMJUHXtM {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 5.40444267em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #R67TWlN8ANKeuQCM {
+                min-width: 91.6rem;
+            }
+
+            #rbOkzOojVfZ8MY6q {
+                grid-area: 14 / 8 / 15 / 18;
+                position: relative;
+            }
+
+            #t2J4ryfGMgxTSntQ {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.90666667em - var(--ffsd)));
+            }
+
+            #caGO87Z6Pj0O7z9O {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 4.90666667em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #F3HrDkJqdld8VCI1 {
+                min-width: 91.6rem;
+            }
+
+            #JvMRUbtwoqKFx3af {
+                grid-area: 16 / 9 / 17 / 19;
+                position: relative;
+            }
+
+            #Aqm3zU3gU4w1iV9z {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(5.40444267em - var(--ffsd)));
+            }
+
+            #BAw19F1QJLuFKUPv {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 5.40444267em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #oCarvRHHJqDI9FWC {
+                min-width: 91.6rem;
+            }
+
+            #k6a03wW77D84qMUv {
+                grid-area: 18 / 10 / 19 / 20;
+                position: relative;
+            }
+
+            #LTYv9zXLVHSmtFTw {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.90666667em - var(--ffsd)));
+            }
+
+            #sNPY19U8hgXQZJaW {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 4.90666667em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #Hx8WLYpORDsFVw2H {
+                min-width: 91.6rem;
+            }
+
+            #hYd0PyQv7c5BNL1C {
+                grid-area: 20 / 11 / 21 / 21;
+                position: relative;
+            }
+
+            #VhexTrLKbxW627rs {
+                grid-template-columns: 4.26666667rem 0 0 0 0 0 0 0 0 0 91.46666667rem 0 0 0 0 0 0 0 0 0 4.26666667rem;
+                grid-template-rows: minmax(19.03411354rem, max-content) minmax(5.36116756rem, max-content) minmax(8.24289292rem, max-content) minmax(5.58190828rem, max-content) minmax(8.26666667rem, max-content) minmax(4.52192414rem, max-content) minmax(8.26666667rem, max-content) minmax(17.60922446rem, max-content) minmax(8.26666667rem, max-content) minmax(4.52192414rem, max-content) minmax(8.26666667rem, max-content) minmax(5.58190828rem, max-content) minmax(8.26666667rem, max-content) minmax(3.56310769rem, max-content) minmax(8.26666667rem, max-content) minmax(8.58873733rem, max-content) minmax(8.26666667rem, max-content) minmax(3.56310769rem, max-content) minmax(8.26666667rem, max-content) minmax(5.58190828rem, max-content) minmax(19.03411354rem, max-content);
+            }
+
+            #Xwo6EoqGMUxefDO5 {
+                min-height: calc(42.62062288 * var(--1vh, 1vh));
+            }
+
+            #j5FJO2hmSM5FlmsO {
+                grid-area: 2 / 2 / 3 / 3;
+                position: relative;
+            }
+
+            #gqpVTUXtLdyt4JBe {
+                grid-template-columns: 0 474.91608406%;
+                left: -187.45804203%;
+                grid-template-rows: 0 100%;
+            }
+
+            #curvnNCecgBJWVl6 {
+                grid-area: 2 / 2 / 3 / 8;
+                position: relative;
+            }
+
+            #LZwgfkozTo0J2yKZ {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(11.36730655em - var(--ffsd)));
+            }
+
+            #n1gmbZjJcysJ43tj {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 11.36730655em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #UnGgxuw8Bm0jnJU7 {
+                min-width: 91.6rem;
+            }
+
+            #KzAqYadoG4W1dxEE {
+                grid-area: 4 / 3 / 5 / 9;
+                position: relative;
+            }
+
+            #uUFDyqO3x4tzy3Lt {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(6.10018101em - var(--ffsd)));
+            }
+
+            #TUJ6GbGzOSCZ6zMY {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 6.10018101em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #jy8xOAndJc2Xzyzz {
+                min-width: 91.6rem;
+            }
+
+            #l0YbVOWsN7GkokoP {
+                grid-area: 6 / 4 / 7 / 10;
+                position: relative;
+            }
+
+            #GpY0GJ3NXswJLK5l {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(5.42235205em - var(--ffsd)));
+            }
+
+            #T15ulPukVhZc00N4 {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 5.42235205em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.15);
+                margin-bottom: calc(var(--last-font-size) * -0.15);
+            }
+
+            #yG9efOrzntCReB24 {
+                min-width: 91.6rem;
+            }
+
+            #BzQZlmRE72bB8p1W {
+                grid-area: 8 / 5 / 9 / 11;
+                position: relative;
+            }
+
+            #KQYFRVrm7GfVyd4J {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(6.10018101em - var(--ffsd)));
+            }
+
+            #kQYpt1nCT4KBleZK {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 6.10018101em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #nF0oD2CqgQgIVUPF {
+                min-width: 91.6rem;
+            }
+
+            #vjbLV1BeqlmVTZr6 {
+                grid-area: 10 / 6 / 11 / 12;
+                position: relative;
+            }
+
+            #ZTDpK4UBofHvngvs {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(5.42235205em - var(--ffsd)));
+            }
+
+            #RgeYARNwysBMkewk {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 5.42235205em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.15);
+                margin-bottom: calc(var(--last-font-size) * -0.15);
+            }
+
+            #YEEI3liyRap3k9uG {
+                min-width: 91.6rem;
+            }
+
+            #XZMMTyJdo8mOZyQl {
+                grid-area: 12 / 7 / 13 / 13;
+                position: relative;
+            }
+
+            #BvIQwDK47Y0NX4G7 {
+                grid-template-columns: 4.26666667rem 0 0 0 0 0 91.46666667rem 0 0 0 0 0 4.26666667rem;
+                grid-template-rows: minmax(4.26666667rem, max-content) minmax(91.46666667rem, max-content) minmax(6.4rem, max-content) minmax(36.37538095rem, max-content) minmax(10.60608682rem, max-content) minmax(7.32019179rem, max-content) minmax(4.99244358rem, max-content) minmax(6.25266202rem, max-content) minmax(10.78838595rem, max-content) minmax(7.32019179rem, max-content) minmax(4.99244358rem, max-content) minmax(6.25266202rem, max-content) minmax(4.26666667rem, max-content);
+            }
+
+            #LhqQ8WOnlcZViLYY {
+                min-height: calc(48.49412727 * var(--1vh, 1vh));
+            }
+        }
+
+        @media (min-width: 375.05px) and (max-width: 480px) {
+            #tkxNpCNyhnCp3K8P {
+                grid-area: 2 / 2 / 3 / 3;
+                position: relative;
+            }
+
+            #GxkQ4wtsCNjLMa4z {
+                grid-template-columns: 0 328.36538462%;
+                left: -114.18269231%;
+                grid-template-rows: 0 100%;
+            }
+
+            #uhXZPDcXndoc2l0j {
+                grid-area: 2 / 2 / 5 / 3;
+                position: relative;
+            }
+
+            #XLTXmSwHYKvDmLDq {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(5.27872801em - var(--ffsd)));
+            }
+
+            #avzoSKBQ7AgdDk18 {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 5.27872801em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #XfS0xDAkgkmIUo1D {
+                min-width: 79.33927762rem;
+            }
+
+            #huwuiEGyX5OiS6aT {
+                grid-area: 3 / 4 / 4 / 5;
+                position: relative;
+            }
+
+            #U13SUCCSs8zuYNbf {
+                grid-template-columns: 0 1.71596618rem 6.11697607rem 79.23511096rem;
+                grid-template-rows: 0 minmax(0.82432667rem, max-content) minmax(6.24373978rem, max-content) minmax(0.46084674rem, max-content);
+            }
+
+            #Fx9Abi1KYQ8ZEgAM {
+                grid-area: 2 / 2 / 3 / 3;
+                position: relative;
+            }
+
+            #az3ybXnsbZHdozLM {
+                grid-template-columns: 3.33333333rem 87.0680532rem 9.59861346rem;
+                grid-template-rows: minmax(8.73554341rem, max-content) minmax(7.52891318rem, max-content) minmax(8.73554341rem, max-content);
+            }
+
+            #rMKZS8Y4vzo7oZqY {
+                min-height: calc(7.11483741 * var(--1vh, 1vh));
+            }
+
+            #l3nOBXDMTYczpuuS {
+                grid-area: 2 / 2 / 3 / 3;
+                position: relative;
+            }
+
+            #zUP7c42ShJ1WQxGf {
+                grid-template-columns: 0 177.10502585%;
+                left: -38.55251293%;
+                grid-template-rows: 0 100%;
+            }
+
+            #rOZoSQfzqL5rtHxj {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.59298658em - var(--ffsd)));
+            }
+
+            #Wdv6FTsmiM0Ru3Th {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 4.59298658em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #dSVodMzUk9Wc6TQh {
+                min-width: 93.4375rem;
+            }
+
+            #LAoGKSt3ukRlRQaR {
+                grid-area: 2 / 2 / 3 / 12;
+                position: relative;
+            }
+
+            #LG1GeYtf8WdXude9 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.83333333em - var(--ffsd)));
+            }
+
+            #iZ2x67TxI1Rxmi7P {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 3.83333333em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #sA0temuITypdNhOO {
+                min-width: 93.4375rem;
+            }
+
+            #wBiil3FV9tsOAKkw {
+                grid-area: 4 / 3 / 5 / 13;
+                position: relative;
+            }
+
+            #q7uUkUgO09clstn9 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.22222083em - var(--ffsd)));
+            }
+
+            #baz04lxsKJFlBb1l {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 4.22222083em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #Wyb3GOu1LJzqj5DU {
+                min-width: 93.4375rem;
+            }
+
+            #ZPLV94ZTSh7x8cJI {
+                grid-area: 6 / 4 / 7 / 14;
+                position: relative;
+            }
+
+            #KlWxqpfyVf3qowfD {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.83333333em - var(--ffsd)));
+            }
+
+            #qb3o448LI7yidVFB {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.83333333em - var(--ffsd)));
+            }
+
+            #j7Y1fRW8HBWVjKg2 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.83333333em - var(--ffsd)));
+            }
+
+            #kUPNsKgAnTOfFsfk {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.83333333em - var(--ffsd)));
+            }
+
+            #lHDJEnOTJLGxf0cw {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 3.83333333em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #BxQHuMWQY8RJ2pgF {
+                min-width: 93.4375rem;
+            }
+
+            #rC4yjIir31iTAxbm {
+                grid-area: 8 / 5 / 9 / 15;
+                position: relative;
+            }
+
+            #mmMO6SD8n2DHJ5ti {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.22222083em - var(--ffsd)));
+            }
+
+            #UFAOuyxH0vL4Fmet {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 4.22222083em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #jFHiQ7C5UM7dNoia {
+                min-width: 93.4375rem;
+            }
+
+            #kf79IfqkFB0zrv1j {
+                grid-area: 10 / 6 / 11 / 16;
+                position: relative;
+            }
+
+            #CMlWGYMVusQ2o3dH {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.83333333em - var(--ffsd)));
+            }
+
+            #ocRJNLWO4vjMqUyH {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 3.83333333em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #rvAz1w4vpXFJybcM {
+                min-width: 93.4375rem;
+            }
+
+            #MGcuOqgefUdrcAvH {
+                grid-area: 12 / 7 / 13 / 17;
+                position: relative;
+            }
+
+            #mVruP7H4YdImi6aE {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.22222083em - var(--ffsd)));
+            }
+
+            #n74p1eGLOMJUHXtM {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 4.22222083em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #R67TWlN8ANKeuQCM {
+                min-width: 93.4375rem;
+            }
+
+            #rbOkzOojVfZ8MY6q {
+                grid-area: 14 / 8 / 15 / 18;
+                position: relative;
+            }
+
+            #t2J4ryfGMgxTSntQ {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.83333333em - var(--ffsd)));
+            }
+
+            #caGO87Z6Pj0O7z9O {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 3.83333333em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #F3HrDkJqdld8VCI1 {
+                min-width: 93.4375rem;
+            }
+
+            #JvMRUbtwoqKFx3af {
+                grid-area: 16 / 9 / 17 / 19;
+                position: relative;
+            }
+
+            #Aqm3zU3gU4w1iV9z {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.22222083em - var(--ffsd)));
+            }
+
+            #BAw19F1QJLuFKUPv {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 4.22222083em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #oCarvRHHJqDI9FWC {
+                min-width: 93.4375rem;
+            }
+
+            #k6a03wW77D84qMUv {
+                grid-area: 18 / 10 / 19 / 20;
+                position: relative;
+            }
+
+            #LTYv9zXLVHSmtFTw {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.83333333em - var(--ffsd)));
+            }
+
+            #sNPY19U8hgXQZJaW {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 3.83333333em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #Hx8WLYpORDsFVw2H {
+                min-width: 93.4375rem;
+            }
+
+            #hYd0PyQv7c5BNL1C {
+                grid-area: 20 / 11 / 21 / 21;
+                position: relative;
+            }
+
+            #VhexTrLKbxW627rs {
+                grid-template-columns: 3.33333333rem 0 0 0 0 0 0 0 0 0 93.33333333rem 0 0 0 0 0 0 0 0 0 3.33333333rem;
+                grid-template-rows: minmax(14.8704012rem, max-content) minmax(5.47057915rem, max-content) minmax(6.43976009rem, max-content) minmax(5.69582478rem, max-content) minmax(6.45833333rem, max-content) minmax(4.61420831rem, max-content) minmax(6.45833333rem, max-content) minmax(17.96859639rem, max-content) minmax(6.45833333rem, max-content) minmax(4.61420831rem, max-content) minmax(6.45833333rem, max-content) minmax(5.69582478rem, max-content) minmax(6.45833333rem, max-content) minmax(3.63582417rem, max-content) minmax(6.45833333rem, max-content) minmax(8.76401768rem, max-content) minmax(6.45833333rem, max-content) minmax(3.63582417rem, max-content) minmax(6.45833333rem, max-content) minmax(5.69582478rem, max-content) minmax(14.8704012rem, max-content);
+            }
+
+            #Xwo6EoqGMUxefDO5 {
+                min-height: calc(43.72436466 * var(--1vh, 1vh));
+            }
+
+            #j5FJO2hmSM5FlmsO {
+                grid-area: 2 / 2 / 3 / 3;
+                position: relative;
+            }
+
+            #gqpVTUXtLdyt4JBe {
+                grid-template-columns: 0 407.53610275%;
+                left: -153.76805137%;
+                grid-template-rows: 0 100%;
+            }
+
+            #curvnNCecgBJWVl6 {
+                grid-area: 2 / 7 / 3 / 8;
+                position: relative;
+            }
+
+            #LZwgfkozTo0J2yKZ {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(10em - var(--ffsd)));
+            }
+
+            #n1gmbZjJcysJ43tj {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 10em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #UnGgxuw8Bm0jnJU7 {
+                min-width: 93.4375rem;
+            }
+
+            #KzAqYadoG4W1dxEE {
+                grid-area: 4 / 2 / 5 / 9;
+                position: relative;
+            }
+
+            #uUFDyqO3x4tzy3Lt {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(5.00002083em - var(--ffsd)));
+            }
+
+            #TUJ6GbGzOSCZ6zMY {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 5.00002083em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #jy8xOAndJc2Xzyzz {
+                min-width: 93.4375rem;
+            }
+
+            #l0YbVOWsN7GkokoP {
+                grid-area: 6 / 3 / 7 / 10;
+                position: relative;
+            }
+
+            #GpY0GJ3NXswJLK5l {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.4444375em - var(--ffsd)));
+            }
+
+            #T15ulPukVhZc00N4 {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 4.4444375em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.15);
+                margin-bottom: calc(var(--last-font-size) * -0.15);
+            }
+
+            #yG9efOrzntCReB24 {
+                min-width: 93.4375rem;
+            }
+
+            #BzQZlmRE72bB8p1W {
+                grid-area: 8 / 4 / 9 / 11;
+                position: relative;
+            }
+
+            #KQYFRVrm7GfVyd4J {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(5.00002083em - var(--ffsd)));
+            }
+
+            #kQYpt1nCT4KBleZK {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 5.00002083em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #nF0oD2CqgQgIVUPF {
+                min-width: 93.4375rem;
+            }
+
+            #vjbLV1BeqlmVTZr6 {
+                grid-area: 10 / 5 / 11 / 12;
+                position: relative;
+            }
+
+            #ZTDpK4UBofHvngvs {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.4444375em - var(--ffsd)));
+            }
+
+            #RgeYARNwysBMkewk {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 4.4444375em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.15);
+                margin-bottom: calc(var(--last-font-size) * -0.15);
+            }
+
+            #YEEI3liyRap3k9uG {
+                min-width: 93.4375rem;
+            }
+
+            #XZMMTyJdo8mOZyQl {
+                grid-area: 12 / 6 / 13 / 13;
+                position: relative;
+            }
+
+            #BvIQwDK47Y0NX4G7 {
+                grid-template-columns: 3.33333333rem 0 0 0 0 2.30632402rem 88.7206853rem 2.30632402rem 0 0 0 0 3.33333333rem;
+                grid-template-rows: minmax(3.33333333rem, max-content) minmax(88.7206853rem, max-content) minmax(5rem, max-content) minmax(27.58788977rem, max-content) minmax(8.28600533rem, max-content) minmax(5.00002083rem, max-content) minmax(3.90034654rem, max-content) minmax(5.12500208rem, max-content) minmax(8.42842652rem, max-content) minmax(5.00002083rem, max-content) minmax(3.90034654rem, max-content) minmax(5.12500208rem, max-content) minmax(3.33333333rem, max-content);
+            }
+
+            #LhqQ8WOnlcZViLYY {
+                min-height: calc(49.16079793 * var(--1vh, 1vh));
+            }
+        }
+
+        @media (min-width: 480.05px) and (max-width: 768px) {
+            #tkxNpCNyhnCp3K8P {
+                grid-area: 2 / 2 / 3 / 3;
+                position: relative;
+            }
+
+            #GxkQ4wtsCNjLMa4z {
+                grid-template-columns: 0 232.59214744%;
+                left: -66.29607372%;
+                grid-template-rows: 0 100%;
+            }
+
+            #uhXZPDcXndoc2l0j {
+                grid-area: 2 / 2 / 5 / 3;
+                position: relative;
+            }
+
+            #XLTXmSwHYKvDmLDq {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.29920501em - var(--ffsd)));
+            }
+
+            #avzoSKBQ7AgdDk18 {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 3.29920501em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #XfS0xDAkgkmIUo1D {
+                min-width: 49.58704851rem;
+            }
+
+            #huwuiEGyX5OiS6aT {
+                grid-area: 3 / 4 / 4 / 5;
+                position: relative;
+            }
+
+            #U13SUCCSs8zuYNbf {
+                grid-template-columns: 0 1.07247886rem 3.82311004rem 49.52194435rem;
+                grid-template-rows: 0 minmax(0.51520417rem, max-content) minmax(3.90233736rem, max-content) minmax(0.28802921rem, max-content);
+            }
+
+            #Fx9Abi1KYQ8ZEgAM {
+                grid-area: 2 / 2 / 3 / 3;
+                position: relative;
+            }
+
+            #az3ybXnsbZHdozLM {
+                grid-template-columns: 4.60892669rem 54.41753325rem 40.97354005rem;
+                grid-template-rows: minmax(6.5013813rem, max-content) minmax(4.70557074rem, max-content) minmax(6.5013813rem, max-content);
+            }
+
+            #rMKZS8Y4vzo7oZqY {
+                min-height: calc(7.19227621 * var(--1vh, 1vh));
+            }
+
+            #l3nOBXDMTYczpuuS {
+                grid-area: 2 / 2 / 3 / 3;
+                position: relative;
+            }
+
+            #zUP7c42ShJ1WQxGf {
+                grid-template-columns: 0 140.17782438%;
+                left: -20.08891219%;
+                grid-template-rows: 0 100%;
+            }
+
+            #rOZoSQfzqL5rtHxj {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.51096896em - var(--ffsd)));
+            }
+
+            #Wdv6FTsmiM0Ru3Th {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 4.51096896em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #dSVodMzUk9Wc6TQh {
+                min-width: 91.73177083rem;
+            }
+
+            #LAoGKSt3ukRlRQaR {
+                grid-area: 2 / 2 / 3 / 12;
+                position: relative;
+            }
+
+            #LG1GeYtf8WdXude9 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.39583333em - var(--ffsd)));
+            }
+
+            #iZ2x67TxI1Rxmi7P {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.39583333em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #sA0temuITypdNhOO {
+                min-width: 91.73177083rem;
+            }
+
+            #wBiil3FV9tsOAKkw {
+                grid-area: 4 / 3 / 5 / 13;
+                position: relative;
+            }
+
+            #q7uUkUgO09clstn9 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.80481662em - var(--ffsd)));
+            }
+
+            #baz04lxsKJFlBb1l {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 3.80481662em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #Wyb3GOu1LJzqj5DU {
+                min-width: 91.73177083rem;
+            }
+
+            #ZPLV94ZTSh7x8cJI {
+                grid-area: 6 / 4 / 7 / 14;
+                position: relative;
+            }
+
+            #KlWxqpfyVf3qowfD {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.39583333em - var(--ffsd)));
+            }
+
+            #qb3o448LI7yidVFB {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.39583333em - var(--ffsd)));
+            }
+
+            #j7Y1fRW8HBWVjKg2 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.39583333em - var(--ffsd)));
+            }
+
+            #kUPNsKgAnTOfFsfk {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.39583333em - var(--ffsd)));
+            }
+
+            #lHDJEnOTJLGxf0cw {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.39583333em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #BxQHuMWQY8RJ2pgF {
+                min-width: 91.73177083rem;
+            }
+
+            #rC4yjIir31iTAxbm {
+                grid-area: 8 / 5 / 9 / 15;
+                position: relative;
+            }
+
+            #mmMO6SD8n2DHJ5ti {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.80481662em - var(--ffsd)));
+            }
+
+            #UFAOuyxH0vL4Fmet {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 3.80481662em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #jFHiQ7C5UM7dNoia {
+                min-width: 91.73177083rem;
+            }
+
+            #kf79IfqkFB0zrv1j {
+                grid-area: 10 / 6 / 11 / 16;
+                position: relative;
+            }
+
+            #CMlWGYMVusQ2o3dH {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.39583333em - var(--ffsd)));
+            }
+
+            #ocRJNLWO4vjMqUyH {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.39583333em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #rvAz1w4vpXFJybcM {
+                min-width: 91.73177083rem;
+            }
+
+            #MGcuOqgefUdrcAvH {
+                grid-area: 12 / 7 / 13 / 17;
+                position: relative;
+            }
+
+            #mVruP7H4YdImi6aE {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.99805369em - var(--ffsd)));
+            }
+
+            #n74p1eGLOMJUHXtM {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.99805369em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #R67TWlN8ANKeuQCM {
+                min-width: 91.73177083rem;
+            }
+
+            #rbOkzOojVfZ8MY6q {
+                grid-area: 14 / 8 / 15 / 18;
+                position: relative;
+            }
+
+            #t2J4ryfGMgxTSntQ {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.39583333em - var(--ffsd)));
+            }
+
+            #caGO87Z6Pj0O7z9O {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.39583333em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #F3HrDkJqdld8VCI1 {
+                min-width: 91.73177083rem;
+            }
+
+            #JvMRUbtwoqKFx3af {
+                grid-area: 16 / 9 / 17 / 19;
+                position: relative;
+            }
+
+            #Aqm3zU3gU4w1iV9z {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.99805369em - var(--ffsd)));
+            }
+
+            #BAw19F1QJLuFKUPv {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.99805369em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #oCarvRHHJqDI9FWC {
+                min-width: 91.73177083rem;
+            }
+
+            #k6a03wW77D84qMUv {
+                grid-area: 18 / 10 / 19 / 20;
+                position: relative;
+            }
+
+            #LTYv9zXLVHSmtFTw {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.39583333em - var(--ffsd)));
+            }
+
+            #sNPY19U8hgXQZJaW {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.39583333em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #Hx8WLYpORDsFVw2H {
+                min-width: 91.73177083rem;
+            }
+
+            #hYd0PyQv7c5BNL1C {
+                grid-area: 20 / 11 / 21 / 21;
+                position: relative;
+            }
+
+            #VhexTrLKbxW627rs {
+                grid-template-columns: 4.16666667rem 0 0 0 0 0 0 0 0 0 91.66666667rem 0 0 0 0 0 0 0 0 0 4.16666667rem;
+                grid-template-rows: minmax(10.33566742rem, max-content) minmax(5.37289023rem, max-content) minmax(4.02485006rem, max-content) minmax(5.59411362rem, max-content) minmax(4.03645833rem, max-content) minmax(4.53181173rem, max-content) minmax(4.03645833rem, max-content) minmax(17.6477286rem, max-content) minmax(4.03645833rem, max-content) minmax(4.53181173rem, max-content) minmax(4.03645833rem, max-content) minmax(5.59411362rem, max-content) minmax(4.03645833rem, max-content) minmax(3.57089874rem, max-content) minmax(4.03645833rem, max-content) minmax(8.60751736rem, max-content) minmax(4.03645833rem, max-content) minmax(3.57089874rem, max-content) minmax(4.03645833rem, max-content) minmax(5.59411362rem, max-content) minmax(10.33566742rem, max-content);
+            }
+
+            #Xwo6EoqGMUxefDO5 {
+                min-height: calc(49.38961437 * var(--1vh, 1vh));
+            }
+
+            #j5FJO2hmSM5FlmsO {
+                grid-area: 2 / 2 / 3 / 3;
+                position: relative;
+            }
+
+            #gqpVTUXtLdyt4JBe {
+                grid-template-columns: 0 252.20539678%;
+                left: -76.10269839%;
+                grid-template-rows: 0 100%;
+            }
+
+            #curvnNCecgBJWVl6 {
+                grid-area: 2 / 7 / 3 / 8;
+                position: relative;
+            }
+
+            #LZwgfkozTo0J2yKZ {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(6.25em - var(--ffsd)));
+            }
+
+            #n1gmbZjJcysJ43tj {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 6.25em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #UnGgxuw8Bm0jnJU7 {
+                min-width: 91.73177083rem;
+            }
+
+            #KzAqYadoG4W1dxEE {
+                grid-area: 4 / 2 / 5 / 9;
+                position: relative;
+            }
+
+            #uUFDyqO3x4tzy3Lt {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.12501302em - var(--ffsd)));
+            }
+
+            #TUJ6GbGzOSCZ6zMY {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 3.12501302em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #jy8xOAndJc2Xzyzz {
+                min-width: 91.73177083rem;
+            }
+
+            #l0YbVOWsN7GkokoP {
+                grid-area: 6 / 3 / 7 / 10;
+                position: relative;
+            }
+
+            #GpY0GJ3NXswJLK5l {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.77777344em - var(--ffsd)));
+            }
+
+            #T15ulPukVhZc00N4 {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.77777344em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.15);
+                margin-bottom: calc(var(--last-font-size) * -0.15);
+            }
+
+            #yG9efOrzntCReB24 {
+                min-width: 91.73177083rem;
+            }
+
+            #BzQZlmRE72bB8p1W {
+                grid-area: 8 / 4 / 9 / 11;
+                position: relative;
+            }
+
+            #KQYFRVrm7GfVyd4J {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.12501302em - var(--ffsd)));
+            }
+
+            #kQYpt1nCT4KBleZK {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 3.12501302em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #nF0oD2CqgQgIVUPF {
+                min-width: 91.73177083rem;
+            }
+
+            #vjbLV1BeqlmVTZr6 {
+                grid-area: 10 / 5 / 11 / 12;
+                position: relative;
+            }
+
+            #ZTDpK4UBofHvngvs {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.77777344em - var(--ffsd)));
+            }
+
+            #RgeYARNwysBMkewk {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.77777344em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.15);
+                margin-bottom: calc(var(--last-font-size) * -0.15);
+            }
+
+            #YEEI3liyRap3k9uG {
+                min-width: 91.73177083rem;
+            }
+
+            #XZMMTyJdo8mOZyQl {
+                grid-area: 12 / 6 / 13 / 13;
+                position: relative;
+            }
+
+            #BvIQwDK47Y0NX4G7 {
+                grid-template-columns: 4.16666667rem 0 0 0 0 18.10811918rem 55.45042831rem 18.10811918rem 0 0 0 0 4.16666667rem;
+                grid-template-rows: minmax(4.16666667rem, max-content) minmax(55.45042831rem, max-content) minmax(4.16666667rem, max-content) minmax(10.97245616rem, max-content) minmax(5.17875333rem, max-content) minmax(3.12501302rem, max-content) minmax(2.43771659rem, max-content) minmax(3.2031263rem, max-content) minmax(5.26776658rem, max-content) minmax(3.12501302rem, max-content) minmax(2.43771659rem, max-content) minmax(3.2031263rem, max-content) minmax(4.16666667rem, max-content);
+            }
+
+            #LhqQ8WOnlcZViLYY {
+                min-height: calc(43.41810943 * var(--1vh, 1vh));
+            }
+        }
+
+        @media (min-width: 768.05px) and (max-width: 1024px) {
+            #tkxNpCNyhnCp3K8P {
+                grid-area: 2 / 2 / 3 / 3;
+                position: relative;
+            }
+
+            #GxkQ4wtsCNjLMa4z {
+                grid-template-columns: 0 174.44411058%;
+                left: -37.22205529%;
+                grid-template-rows: 0 100%;
+            }
+
+            #uhXZPDcXndoc2l0j {
+                grid-area: 2 / 2 / 5 / 3;
+                position: relative;
+            }
+
+            #XLTXmSwHYKvDmLDq {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.47440376em - var(--ffsd)));
+            }
+
+            #avzoSKBQ7AgdDk18 {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.47440376em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #XfS0xDAkgkmIUo1D {
+                min-width: 37.19028639rem;
+            }
+
+            #huwuiEGyX5OiS6aT {
+                grid-area: 3 / 4 / 4 / 5;
+                position: relative;
+            }
+
+            #U13SUCCSs8zuYNbf {
+                grid-template-columns: 0 0.80435915rem 2.86733253rem 37.14145826rem;
+                grid-template-rows: 0 minmax(0.38640313rem, max-content) minmax(2.92675302rem, max-content) minmax(0.21602191rem, max-content);
+            }
+
+            #Fx9Abi1KYQ8ZEgAM {
+                grid-area: 2 / 2 / 3 / 3;
+                position: relative;
+            }
+
+            #az3ybXnsbZHdozLM {
+                grid-template-columns: 5.98449081rem 40.81314994rem 53.20235925rem;
+                grid-template-rows: minmax(4.87603597rem, max-content) minmax(3.52917806rem, max-content) minmax(4.87603597rem, max-content);
+            }
+
+            #rMKZS8Y4vzo7oZqY {
+                min-height: calc(6.73811893 * var(--1vh, 1vh));
+            }
+
+            #l3nOBXDMTYczpuuS {
+                grid-area: 2 / 2 / 3 / 3;
+                position: relative;
+            }
+
+            #zUP7c42ShJ1WQxGf {
+                grid-template-columns: 0 122.01043007%;
+                left: -11.00521503%;
+                grid-template-rows: 0 100%;
+            }
+
+            #rOZoSQfzqL5rtHxj {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.64583008em - var(--ffsd)));
+            }
+
+            #Wdv6FTsmiM0Ru3Th {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 3.64583008em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #dSVodMzUk9Wc6TQh {
+                min-width: 93.79882812rem;
+            }
+
+            #LAoGKSt3ukRlRQaR {
+                grid-area: 2 / 2 / 3 / 12;
+                position: relative;
+            }
+
+            #LG1GeYtf8WdXude9 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.21263911em - var(--ffsd)));
+            }
+
+            #iZ2x67TxI1Rxmi7P {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.21263911em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #sA0temuITypdNhOO {
+                min-width: 93.79882812rem;
+            }
+
+            #wBiil3FV9tsOAKkw {
+                grid-area: 4 / 3 / 5 / 13;
+                position: relative;
+            }
+
+            #q7uUkUgO09clstn9 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.64583008em - var(--ffsd)));
+            }
+
+            #baz04lxsKJFlBb1l {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 3.64583008em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #Wyb3GOu1LJzqj5DU {
+                min-width: 93.79882812rem;
+            }
+
+            #ZPLV94ZTSh7x8cJI {
+                grid-area: 6 / 4 / 7 / 14;
+                position: relative;
+            }
+
+            #KlWxqpfyVf3qowfD {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.21263911em - var(--ffsd)));
+            }
+
+            #qb3o448LI7yidVFB {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.21263911em - var(--ffsd)));
+            }
+
+            #j7Y1fRW8HBWVjKg2 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.21263911em - var(--ffsd)));
+            }
+
+            #kUPNsKgAnTOfFsfk {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.21263911em - var(--ffsd)));
+            }
+
+            #lHDJEnOTJLGxf0cw {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.21263911em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #BxQHuMWQY8RJ2pgF {
+                min-width: 93.79882812rem;
+            }
+
+            #rC4yjIir31iTAxbm {
+                grid-area: 8 / 5 / 9 / 15;
+                position: relative;
+            }
+
+            #mmMO6SD8n2DHJ5ti {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.64583008em - var(--ffsd)));
+            }
+
+            #UFAOuyxH0vL4Fmet {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 3.64583008em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #jFHiQ7C5UM7dNoia {
+                min-width: 93.79882812rem;
+            }
+
+            #kf79IfqkFB0zrv1j {
+                grid-area: 10 / 6 / 11 / 16;
+                position: relative;
+            }
+
+            #CMlWGYMVusQ2o3dH {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.21263911em - var(--ffsd)));
+            }
+
+            #ocRJNLWO4vjMqUyH {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.21263911em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #rvAz1w4vpXFJybcM {
+                min-width: 93.79882812rem;
+            }
+
+            #MGcuOqgefUdrcAvH {
+                grid-area: 12 / 7 / 13 / 17;
+                position: relative;
+            }
+
+            #mVruP7H4YdImi6aE {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.06619127em - var(--ffsd)));
+            }
+
+            #n74p1eGLOMJUHXtM {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 3.06619127em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #R67TWlN8ANKeuQCM {
+                min-width: 93.79882812rem;
+            }
+
+            #rbOkzOojVfZ8MY6q {
+                grid-area: 14 / 8 / 15 / 18;
+                position: relative;
+            }
+
+            #t2J4ryfGMgxTSntQ {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.21263911em - var(--ffsd)));
+            }
+
+            #caGO87Z6Pj0O7z9O {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.21263911em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #F3HrDkJqdld8VCI1 {
+                min-width: 93.79882812rem;
+            }
+
+            #JvMRUbtwoqKFx3af {
+                grid-area: 16 / 9 / 17 / 19;
+                position: relative;
+            }
+
+            #Aqm3zU3gU4w1iV9z {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.06619127em - var(--ffsd)));
+            }
+
+            #BAw19F1QJLuFKUPv {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 3.06619127em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #oCarvRHHJqDI9FWC {
+                min-width: 93.79882812rem;
+            }
+
+            #k6a03wW77D84qMUv {
+                grid-area: 18 / 10 / 19 / 20;
+                position: relative;
+            }
+
+            #LTYv9zXLVHSmtFTw {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.21263911em - var(--ffsd)));
+            }
+
+            #sNPY19U8hgXQZJaW {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.21263911em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #Hx8WLYpORDsFVw2H {
+                min-width: 93.79882812rem;
+            }
+
+            #hYd0PyQv7c5BNL1C {
+                grid-area: 20 / 11 / 21 / 21;
+                position: relative;
+            }
+
+            #VhexTrLKbxW627rs {
+                grid-template-columns: 3.125rem 0 0 0 0 0 0 0 0 0 93.75rem 0 0 0 0 0 0 0 0 0 3.125rem;
+                grid-template-rows: minmax(7.75175056rem, max-content) minmax(3.64583008rem, max-content) minmax(3.01863754rem, max-content) minmax(5.72125256rem, max-content) minmax(3.02734375rem, max-content) minmax(4.06852894rem, max-content) minmax(3.02734375rem, max-content) minmax(18.04881334rem, max-content) minmax(3.02734375rem, max-content) minmax(4.06852894rem, max-content) minmax(3.02734375rem, max-content) minmax(5.72125256rem, max-content) minmax(3.02734375rem, max-content) minmax(3.65205553rem, max-content) minmax(3.02734375rem, max-content) minmax(8.80314276rem, max-content) minmax(3.02734375rem, max-content) minmax(3.65205553rem, max-content) minmax(3.02734375rem, max-content) minmax(5.72125256rem, max-content) minmax(7.75175056rem, max-content);
+            }
+
+            #Xwo6EoqGMUxefDO5 {
+                min-height: calc(53.69876893 * var(--1vh, 1vh));
+            }
+
+            #j5FJO2hmSM5FlmsO {
+                grid-area: 2 / 2 / 3 / 3;
+                position: relative;
+            }
+
+            #gqpVTUXtLdyt4JBe {
+                grid-template-columns: 0 183.97671594%;
+                left: -41.98835797%;
+                grid-template-rows: 0 100%;
+            }
+
+            #curvnNCecgBJWVl6 {
+                grid-area: 2 / 7 / 3 / 8;
+                position: relative;
+            }
+
+            #LZwgfkozTo0J2yKZ {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(4.6875em - var(--ffsd)));
+            }
+
+            #n1gmbZjJcysJ43tj {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 4.6875em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #UnGgxuw8Bm0jnJU7 {
+                min-width: 93.79882812rem;
+            }
+
+            #KzAqYadoG4W1dxEE {
+                grid-area: 4 / 2 / 5 / 9;
+                position: relative;
+            }
+
+            #uUFDyqO3x4tzy3Lt {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.34375977em - var(--ffsd)));
+            }
+
+            #TUJ6GbGzOSCZ6zMY {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.34375977em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #jy8xOAndJc2Xzyzz {
+                min-width: 93.79882812rem;
+            }
+
+            #l0YbVOWsN7GkokoP {
+                grid-area: 6 / 3 / 7 / 10;
+                position: relative;
+            }
+
+            #GpY0GJ3NXswJLK5l {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.08333008em - var(--ffsd)));
+            }
+
+            #T15ulPukVhZc00N4 {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.08333008em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.15);
+                margin-bottom: calc(var(--last-font-size) * -0.15);
+            }
+
+            #yG9efOrzntCReB24 {
+                min-width: 93.79882812rem;
+            }
+
+            #BzQZlmRE72bB8p1W {
+                grid-area: 8 / 4 / 9 / 11;
+                position: relative;
+            }
+
+            #KQYFRVrm7GfVyd4J {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.34375977em - var(--ffsd)));
+            }
+
+            #kQYpt1nCT4KBleZK {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.34375977em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #nF0oD2CqgQgIVUPF {
+                min-width: 93.79882812rem;
+            }
+
+            #vjbLV1BeqlmVTZr6 {
+                grid-area: 10 / 5 / 11 / 12;
+                position: relative;
+            }
+
+            #ZTDpK4UBofHvngvs {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.08333008em - var(--ffsd)));
+            }
+
+            #RgeYARNwysBMkewk {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.08333008em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.15);
+                margin-bottom: calc(var(--last-font-size) * -0.15);
+            }
+
+            #YEEI3liyRap3k9uG {
+                min-width: 93.79882812rem;
+            }
+
+            #XZMMTyJdo8mOZyQl {
+                grid-area: 12 / 6 / 13 / 13;
+                position: relative;
+            }
+
+            #BvIQwDK47Y0NX4G7 {
+                grid-template-columns: 3.125rem 0 0 0 0 26.08108938rem 41.58782123rem 26.08108938rem 0 0 0 0 3.125rem;
+                grid-template-rows: minmax(3.125rem, max-content) minmax(41.58782123rem, max-content) minmax(3.125rem, max-content) minmax(6.03485089rem, max-content) minmax(3.884065rem, max-content) minmax(2.34375977rem, max-content) minmax(1.82828744rem, max-content) minmax(2.40234473rem, max-content) minmax(3.95082493rem, max-content) minmax(2.34375977rem, max-content) minmax(1.82828744rem, max-content) minmax(2.40234473rem, max-content) minmax(3.125rem, max-content);
+            }
+
+            #LhqQ8WOnlcZViLYY {
+                min-height: calc(39.56311214 * var(--1vh, 1vh));
+            }
+        }
+
+        @media (min-width: 1024.05px) {
+            #tkxNpCNyhnCp3K8P {
+                grid-area: 2 / 2 / 3 / 3;
+                position: relative;
+            }
+
+            #GxkQ4wtsCNjLMa4z {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+
+            #uhXZPDcXndoc2l0j {
+                grid-area: 2 / 2 / 5 / 3;
+                position: relative;
+            }
+
+            #XLTXmSwHYKvDmLDq {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.85489711em - var(--ffsd)));
+            }
+
+            #avzoSKBQ7AgdDk18 {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 1.85489711em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #XfS0xDAkgkmIUo1D {
+                min-width: 27.87910195rem;
+            }
+
+            #huwuiEGyX5OiS6aT {
+                grid-area: 3 / 4 / 4 / 5;
+                position: relative;
+            }
+
+            #U13SUCCSs8zuYNbf {
+                grid-template-columns: 0 0.60297494rem 2.14944986rem 27.84249873rem;
+                grid-template-rows: 0 minmax(0.28966091rem, max-content) minmax(2.19399348rem, max-content) minmax(0.16193736rem, max-content);
+            }
+
+            #Fx9Abi1KYQ8ZEgAM {
+                grid-area: 2 / 2 / 3 / 3;
+                position: relative;
+            }
+
+            #az3ybXnsbZHdozLM {
+                grid-template-columns: 7.01767439rem 30.59492353rem 62.38740208rem;
+                grid-template-rows: minmax(2.57274465rem, max-content) minmax(2.64559175rem, max-content) minmax(2.39513359rem, max-content);
+            }
+
+            #rMKZS8Y4vzo7oZqY {
+                min-height: calc(5.56745182 * var(--1vh, 1vh));
+            }
+
+            #l3nOBXDMTYczpuuS {
+                grid-area: 2 / 2 / 3 / 3;
+                position: relative;
+            }
+
+            #zUP7c42ShJ1WQxGf {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+
+            #rOZoSQfzqL5rtHxj {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.73303807em - var(--ffsd)));
+            }
+
+            #Wdv6FTsmiM0Ru3Th {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.73303807em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #dSVodMzUk9Wc6TQh {
+                min-width: 55.57422537rem;
+            }
+
+            #LAoGKSt3ukRlRQaR {
+                grid-area: 2 / 2 / 3 / 12;
+                position: relative;
+            }
+
+            #LG1GeYtf8WdXude9 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.04978038em - var(--ffsd)));
+            }
+
+            #iZ2x67TxI1Rxmi7P {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.04978038em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #sA0temuITypdNhOO {
+                min-width: 86.88624332rem;
+            }
+
+            #wBiil3FV9tsOAKkw {
+                grid-area: 4 / 7 / 5 / 17;
+                position: relative;
+            }
+
+            #q7uUkUgO09clstn9 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.73303807em - var(--ffsd)));
+            }
+
+            #baz04lxsKJFlBb1l {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.73303807em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #Wyb3GOu1LJzqj5DU {
+                min-width: 65.88169242rem;
+            }
+
+            #ZPLV94ZTSh7x8cJI {
+                grid-area: 6 / 3 / 7 / 13;
+                position: relative;
+            }
+
+            #KlWxqpfyVf3qowfD {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.04978038em - var(--ffsd)));
+            }
+
+            #qb3o448LI7yidVFB {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.04978038em - var(--ffsd)));
+            }
+
+            #j7Y1fRW8HBWVjKg2 {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.04978038em - var(--ffsd)));
+            }
+
+            #kUPNsKgAnTOfFsfk {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.04978038em - var(--ffsd)));
+            }
+
+            #lHDJEnOTJLGxf0cw {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.04978038em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #BxQHuMWQY8RJ2pgF {
+                min-width: 86.88624332rem;
+            }
+
+            #rC4yjIir31iTAxbm {
+                grid-area: 8 / 8 / 9 / 18;
+                position: relative;
+            }
+
+            #mmMO6SD8n2DHJ5ti {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.73303807em - var(--ffsd)));
+            }
+
+            #UFAOuyxH0vL4Fmet {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.73303807em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #jFHiQ7C5UM7dNoia {
+                min-width: 65.88169242rem;
+            }
+
+            #kf79IfqkFB0zrv1j {
+                grid-area: 10 / 4 / 11 / 14;
+                position: relative;
+            }
+
+            #CMlWGYMVusQ2o3dH {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.04978038em - var(--ffsd)));
+            }
+
+            #ocRJNLWO4vjMqUyH {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.04978038em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #rvAz1w4vpXFJybcM {
+                min-width: 86.88624332rem;
+            }
+
+            #MGcuOqgefUdrcAvH {
+                grid-area: 12 / 9 / 13 / 19;
+                position: relative;
+            }
+
+            #mVruP7H4YdImi6aE {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.73303807em - var(--ffsd)));
+            }
+
+            #n74p1eGLOMJUHXtM {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.73303807em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #R67TWlN8ANKeuQCM {
+                min-width: 83.60031348rem;
+            }
+
+            #rbOkzOojVfZ8MY6q {
+                grid-area: 14 / 5 / 15 / 15;
+                position: relative;
+            }
+
+            #t2J4ryfGMgxTSntQ {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.04978038em - var(--ffsd)));
+            }
+
+            #caGO87Z6Pj0O7z9O {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.04978038em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #F3HrDkJqdld8VCI1 {
+                min-width: 86.88624332rem;
+            }
+
+            #JvMRUbtwoqKFx3af {
+                grid-area: 16 / 10 / 17 / 20;
+                position: relative;
+            }
+
+            #Aqm3zU3gU4w1iV9z {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.73303807em - var(--ffsd)));
+            }
+
+            #BAw19F1QJLuFKUPv {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.73303807em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #oCarvRHHJqDI9FWC {
+                min-width: 83.60031348rem;
+            }
+
+            #k6a03wW77D84qMUv {
+                grid-area: 18 / 6 / 19 / 16;
+                position: relative;
+            }
+
+            #LTYv9zXLVHSmtFTw {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(2.04978038em - var(--ffsd)));
+            }
+
+            #sNPY19U8hgXQZJaW {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 2.04978038em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.1);
+                margin-bottom: calc(var(--last-font-size) * -0.1);
+            }
+
+            #Hx8WLYpORDsFVw2H {
+                min-width: 86.88624332rem;
+            }
+
+            #hYd0PyQv7c5BNL1C {
+                grid-area: 20 / 11 / 21 / 21;
+                position: relative;
+            }
+
+            #VhexTrLKbxW627rs {
+                grid-template-columns: 4.0196096rem 0 0 0 0 1.65388966rem 0 0.90168068rem 0 0 52.9820518rem 10.30746706rem 0 17.71862106rem 0 4.93981951rem 0 0.90168068rem 0 0 6.57517995rem;
+                grid-template-rows: minmax(5.64319204rem, max-content) minmax(3.25524597rem, max-content) minmax(2.26287324rem, max-content) minmax(5.30014641rem, max-content) minmax(2.26939971rem, max-content) minmax(3.25524597rem, max-content) minmax(2.26939971rem, max-content) minmax(16.72035139rem, max-content) minmax(2.26939971rem, max-content) minmax(3.25524597rem, max-content) minmax(2.26939971rem, max-content) minmax(5.30014641rem, max-content) minmax(2.26939971rem, max-content) minmax(3.25524597rem, max-content) minmax(2.26939971rem, max-content) minmax(8.15519766rem, max-content) minmax(2.26939971rem, max-content) minmax(3.25524597rem, max-content) minmax(2.26939971rem, max-content) minmax(5.30014641rem, max-content) minmax(3.63615288rem, max-content);
+            }
+
+            #Xwo6EoqGMUxefDO5 {
+                min-height: calc(63.43683084 * var(--1vh, 1vh));
+            }
+
+            #j5FJO2hmSM5FlmsO {
+                grid-area: 2 / 2 / 3 / 3;
+                position: relative;
+            }
+
+            #gqpVTUXtLdyt4JBe {
+                grid-template-columns: 0 100%;
+                grid-template-rows: 0 100%;
+            }
+
+            #curvnNCecgBJWVl6 {
+                grid-area: 2 / 2 / 13 / 3;
+                position: relative;
+            }
+
+            #LZwgfkozTo0J2yKZ {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(3.51390922em - var(--ffsd)));
+            }
+
+            #n1gmbZjJcysJ43tj {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 3.51390922em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #UnGgxuw8Bm0jnJU7 {
+                min-width: 28.31116082rem;
+            }
+
+            #KzAqYadoG4W1dxEE {
+                grid-area: 3 / 4 / 4 / 13;
+                position: relative;
+            }
+
+            #uUFDyqO3x4tzy3Lt {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.75696193em - var(--ffsd)));
+            }
+
+            #TUJ6GbGzOSCZ6zMY {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 1.75696193em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #jy8xOAndJc2Xzyzz {
+                min-width: 26.3806496rem;
+            }
+
+            #l0YbVOWsN7GkokoP {
+                grid-area: 5 / 5 / 6 / 9;
+                position: relative;
+            }
+
+            #GpY0GJ3NXswJLK5l {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.56173499em - var(--ffsd)));
+            }
+
+            #T15ulPukVhZc00N4 {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 1.56173499em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.15);
+                margin-bottom: calc(var(--last-font-size) * -0.15);
+            }
+
+            #yG9efOrzntCReB24 {
+                min-width: 26.3806496rem;
+            }
+
+            #BzQZlmRE72bB8p1W {
+                grid-area: 7 / 6 / 8 / 10;
+                position: relative;
+            }
+
+            #KQYFRVrm7GfVyd4J {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.75696193em - var(--ffsd)));
+            }
+
+            #kQYpt1nCT4KBleZK {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 1.75696193em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * 0.1);
+                margin-bottom: calc(var(--last-font-size) * 0.1);
+            }
+
+            #nF0oD2CqgQgIVUPF {
+                min-width: 26.3806496rem;
+            }
+
+            #vjbLV1BeqlmVTZr6 {
+                grid-area: 9 / 7 / 10 / 11;
+                position: relative;
+            }
+
+            #ZTDpK4UBofHvngvs {
+                font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), calc(1.56173499em - var(--ffsd)));
+            }
+
+            #RgeYARNwysBMkewk {
+                --first-font-size: max(calc(12px * var(--rfso, var(--bfso, 1))), 1.56173499em);
+                --last-font-size: var(--first-font-size);
+                margin-top: calc(var(--first-font-size) * -0.15);
+                margin-bottom: calc(var(--last-font-size) * -0.15);
+            }
+
+            #YEEI3liyRap3k9uG {
+                min-width: 26.3806496rem;
+            }
+
+            #XZMMTyJdo8mOZyQl {
+                grid-area: 11 / 8 / 12 / 12;
+                position: relative;
+            }
+
+            #BvIQwDK47Y0NX4G7 {
+                grid-template-columns: 11.77276366rem 31.17564344rem 18.70157753rem 0 0 0 0 26.34404638rem 0 0 0 1.93051121rem 10.07545778rem;
+                grid-template-rows: minmax(5.60544329rem, max-content) minmax(1.74914457rem, max-content) minmax(11.24450952rem, max-content) minmax(2.91162706rem, max-content) minmax(2.108347rem, max-content) minmax(1.37054637rem, max-content) minmax(1.80087921rem, max-content) minmax(2.96167257rem, max-content) minmax(2.108347rem, max-content) minmax(1.37054637rem, max-content) minmax(1.80087921rem, max-content) minmax(1.74914457rem, max-content) minmax(5.60544329rem, max-content);
+            }
+
+            #LhqQ8WOnlcZViLYY {
+                min-height: calc(30.99571734 * var(--1vh, 1vh));
+            }
+        }
+
+        @keyframes fade-LEFT-c47e23c4-c374-49d9-b49e-8bf81c55e3cb {
+            0% {
+                opacity: 0.0;
+                animation-timing-function: cubic-bezier(0.4, 0.8, 0.74, 1.0);
+            }
+
+            100% {
+                opacity: 1.0;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                background-color: rgba(226, 226, 226, 0.05);
+            }
+
+            50% {
+                background-color: rgba(226, 226, 226, 0.1);
+            }
+
+            100% {
+                background-color: rgba(226, 226, 226, 0.05);
+            }
+        }
+
+        @keyframes fade-LEFT-e8e685da-5c05-40ab-8762-aa18306a6612 {
+            0% {
+                opacity: 0.0;
+                animation-timing-function: cubic-bezier(0.4, 0.8, 0.74, 1.0);
+            }
+
+            100% {
+                opacity: 1.0;
+            }
+        }
+
+        @keyframes fade-LEFT-0d2cde53-1d60-4f85-a6c6-88ead83d997f {
+            0% {
+                opacity: 0.0;
+                animation-timing-function: cubic-bezier(0.4, 0.8, 0.74, 1.0);
+            }
+
+            100% {
+                opacity: 1.0;
+            }
+        }
+
+        @keyframes fade-RIGHT-6bae4144-395c-4e22-85ad-b604616bf46e {
+            0% {
+                opacity: 0.0;
+                animation-timing-function: cubic-bezier(0.4, 0.8, 0.74, 1.0);
+            }
+
+            100% {
+                opacity: 1.0;
+            }
+        }
+
+        @keyframes fade-LEFT-1e6004dd-7586-4af9-83d0-e49a628f5cf4 {
+            0% {
+                opacity: 0.0;
+                animation-timing-function: cubic-bezier(0.4, 0.8, 0.74, 1.0);
+            }
+
+            100% {
+                opacity: 1.0;
+            }
+        }
+
+        @keyframes fade-LEFT-f27263b0-c423-4005-87df-3e351c9f3d2b {
+            0% {
+                opacity: 0.0;
+                animation-timing-function: cubic-bezier(0.4, 0.8, 0.74, 1.0);
+            }
+
+            100% {
+                opacity: 1.0;
+            }
+        }
+    </style><noscript>
+        <style>
+            @keyframes pulse {}
+
+            .animated {
+                animation-play-state: running !important;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body>
+    <div id="root"><a id="page-1" aria-hidden="true" style="visibility:hidden;"></a>
+        <section id="rMKZS8Y4vzo7oZqY"
+            style="position:relative;overflow:hidden;display:grid;align-items:center;grid-template-columns:auto 100rem auto;z-index:0;">
+            <div id="GxkQ4wtsCNjLMa4z"
+                style="grid-area:1 / 1 / 2 / 4;display:grid;position:absolute;min-height:100%;min-width:100%;">
+                <div id="tkxNpCNyhnCp3K8P" style="z-index:0;">
+                    <div id="OqbKO4wnzA1NLzSx"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                        <div id="JLhjURstK6lRg0Qj" style="width:100%;height:100%;opacity:1.0;">
+                            <div id="QPqLAvydNrWjXfjs"
+                                style="background-color:#0252b3;opacity:1.0;transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="az3ybXnsbZHdozLM" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+                <div id="Fx9Abi1KYQ8ZEgAM">
+                    <div id="U13SUCCSs8zuYNbf" style="display:grid;position:relative;grid-area:2 / 2 / 3 / 3;">
+                        <div id="uhXZPDcXndoc2l0j" style="z-index:2;">
+                            <div id="ubOxevwe0OpSrIoT" style="padding-top:438.75650182%;transform:rotate(0deg);">
+                                <div id="kC3fg7zDNFa40Qgn"
+                                    style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg
+                                        id="iktzIzGNRwex0o2k" viewBox="0 0 7.9686 34.963"
+                                        style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url('data:image/png;base64,');">
+                                        <g id="NBd5BKWzYxC7r7LW" style="transform:scale(1, 1);">
+                                            <path id="QlUFQ5a43tUrXOEG"
+                                                d="M3.98432422,0 L3.98432422,0 C6.18480572,0 7.96864843,1.78384272 7.96864843,3.98432422 L7.96864843,30.97863889 C7.96864843,33.17912039 6.18480572,34.9629631 3.98432422,34.9629631 L3.98432422,34.9629631 C1.78384272,34.9629631 0,33.17912039 0,30.97863889 L0,3.98432422 C0,1.78384271 1.78384272,0 3.98432422,0 Z"
+                                                style="fill:#1a2529;opacity:1.0;"></path>
+                                        </g>
+                                    </svg></div>
+                            </div>
+                        </div>
+                        <div id="huwuiEGyX5OiS6aT" style="z-index:3;">
+                            <div id="XfS0xDAkgkmIUo1D"
+                                style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                                <div id="avzoSKBQ7AgdDk18"
+                                    style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                                    <p id="XLTXmSwHYKvDmLDq"
+                                        style="color:#e8fff7;font-family:YAFdJoNRMmU-0;line-height:1.38133025em;letter-spacing:0em;">
+                                        <span id="r36RRHmS1HLS6zYK" style="color:#e8fff7;font-weight:700;">Task Samurai
+                                            Setup Guide</span><br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><a id="page-2" aria-hidden="true" style="visibility:hidden;"></a>
+        <section id="Xwo6EoqGMUxefDO5"
+            style="position:relative;overflow:hidden;display:grid;align-items:center;grid-template-columns:auto 100rem auto;z-index:0;margin-top:-1px;">
+            <div id="zUP7c42ShJ1WQxGf"
+                style="grid-area:1 / 1 / 2 / 4;display:grid;position:absolute;min-height:100%;min-width:100%;">
+                <div id="l3nOBXDMTYczpuuS" style="z-index:0;">
+                    <div id="Lveu0n5AcjK9m3lX"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                        <div id="xpHE65zoHpo7938E" style="width:100%;height:100%;opacity:1.0;">
+                            <div id="GYOJ700NCNXbQFDh"
+                                style="background-color:#f4f4f4;opacity:1.0;transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="VhexTrLKbxW627rs" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+                <div id="LAoGKSt3ukRlRQaR" style="z-index:1;">
+                    <div id="dSVodMzUk9Wc6TQh" style="box-sizing:border-box;width:100%;height:100%;">
+                        <div class="animation_container" style="width:100%;height:100%;">
+                            <div class="animated"
+                                style="width: 100%; height: 100%; animation: 2500ms ease 100ms 1 normal both running fade-LEFT-e8e685da-5c05-40ab-8762-aa18306a6612;">
+                                <div id="Wdv6FTsmiM0Ru3Th"
+                                    style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                                    <p id="rOZoSQfzqL5rtHxj"
+                                        style="color:#000000;font-family:YAFdJoNRMmU-0;line-height:0.99107231em;letter-spacing:0em;">
+                                        <span id="vdBL2gqAJabgkJ7z" style="color:#000000;">Step 1. Get your Task Samurai
+                                            API key</span><br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="wBiil3FV9tsOAKkw" style="z-index:2;">
+                    <div id="sA0temuITypdNhOO"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                        <div id="iZ2x67TxI1Rxmi7P"
+                            style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                            <p id="LG1GeYtf8WdXude9"
+                                style="color:#253237;font-family:YAFdJoNRMmU-0;line-height:1.39285714em;text-transform:none;letter-spacing:0em;">
+                                <span id="d8hRxL1jIJUKp890" style="color:#253237;">The Task Samurai team will provide
+                                    you with an API key. Store it somewhere as you'll need it later.</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="ZPLV94ZTSh7x8cJI" style="z-index:3;">
+                    <div id="Wyb3GOu1LJzqj5DU" style="box-sizing:border-box;width:100%;height:100%;">
+                        <div class="animation_container" style="width:100%;height:100%;">
+                            <div class="animated"
+                                style="width: 100%; height: 100%; animation: 2500ms ease 100ms 1 normal both running fade-LEFT-0d2cde53-1d60-4f85-a6c6-88ead83d997f;">
+                                <div id="baz04lxsKJFlBb1l"
+                                    style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                                    <p id="q7uUkUgO09clstn9"
+                                        style="color:#000000;font-family:YAFdJoNRMmU-0;line-height:0.99107231em;letter-spacing:0em;">
+                                        <span id="rhQiCtHpek9iASrR" style="color:#000000;">Step 2. Install the GitHub
+                                            App in your organization</span><br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="rC4yjIir31iTAxbm" style="z-index:4;">
+                    <div id="BxQHuMWQY8RJ2pgF"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                        <div id="lHDJEnOTJLGxf0cw"
+                            style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                            <p id="KlWxqpfyVf3qowfD"
+                                style="color:#253237;font-family:YAFdJoNRMmU-0;line-height:1.39285714em;"><span
+                                    id="X2tsp2eJjFZOHr7g" style="color:#253237;">Visit the </span><a
+                                    id="jZLnOXVQ21FH3ntJ" target="_blank" rel="noopener"
+                                    href="/_link/?link=https%3A%2F%2Fgithub.com%2Fapps%2Ftask-samurai&amp;target=8Of5OoXwIYYuyeHsh%2BTNwKsrPwQDaCHbY8G7EnH70sMFPy6jSpk%2Fi128OoV6ab6EIbGbADX9PQ2evQuxukEK8E77sytAq63Gsd7zz6btCiiaeTz0NMWLWyLIA4G%2F1zi7xrP9YypUHp359iBJI5KcmJlWWtPbZAQi4%2BImCJ4KHP4Ty%2BM4%2F9hhxy38gop4XXZFlaVxn4NpWcFWru%2BtIBHNqHgZgp2DK%2FgBV1R6k6McBMSSiYIrgMNDO2eQY4RZxl%2F8HXe5Dk0kYo0YgGkAWGbyizvRiuqYzv2IGS3hI%2FLFrEG0pj%2F9LSxpZ9ah%2FENyRKdI2691be39Z1J%2BXTgv00N%2BJBqknX3emojtUV2SJZX5%2FaAMzZYLqotha7iDD7RMoQA566eK7WyaVfy0c2JGLvkql6dUejPMjkZaEbZWCDOfu6INvUJgUdR%2FdNSBZXYBEiMiK83m%2FVODM29%2FZKmv%2BE3rBQtIkwaP5nJBSYl1l7UeaVzjvm4T4D4BcscSWTlFZRghdiWym7OkAu1toqEWUJhxB9xkm%2BGXaXPiMGNe3FgCL6ognY5kxWgNd3UjHHLP%2FMbLoLpxijH%2BFbkc88jSUktdo%2FxY0oS0oD4kaGhRIOvZZB%2Bk7S9ymaJsrecoF53IEb6PhajLcMWQ1rYa6OzrE7j9X%2Fava8RQvCGpm0nKUd%2F7yh9kW9mKon5TY6qvQM6pSSSVSs2kRsiqNBpz97T%2B%2FStxiXBXrDnIEb3oPGiFBvY8hmXgWsvIcKqx81FFq25qSJyeCsmVOl9yzugdEtcOWbUitOh58pm%2FrpymZuxse5kU6c5HHjg%3D&amp;iv=vAiSt7BzqEp7VP4h"
+                                    style="text-decoration-line:underline;color:#253237;pointer-events:all;">Task
+                                    Samurai page in the GitHub app marketplace</a><span id="EJNifD02rLe3yBzS"
+                                    style="color:#253237;"> to install the Task Samurai GitHub app in your
+                                    organization's GitHub environment.</span></p>
+                            <p id="qb3o448LI7yidVFB"
+                                style="color:#253237;font-family:YAFdJoNRMmU-0;line-height:1.39285714em;"><span
+                                    id="xbLnozBWTnZvEZaZ" style="color:#253237;">This integration provides read-only
+                                    access to the code and can be revoked at any time from your organization's settings
+                                    page.</span></p>
+                            <p id="j7Y1fRW8HBWVjKg2"
+                                style="color:#253237;font-family:YAFdJoNRMmU-0;line-height:1.39285714em;white-space:pre;">
+                                <br></p>
+                            <p id="kUPNsKgAnTOfFsfk"
+                                style="color:#253237;font-family:YAFdJoNRMmU-0;line-height:1.39285714em;text-transform:none;letter-spacing:0em;">
+                                <span id="aulgBavBmG9oRmBl" style="color:#253237;">When prompted during the installation
+                                    flow, provide your Task Samurai API key.</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="kf79IfqkFB0zrv1j" style="z-index:5;">
+                    <div id="jFHiQ7C5UM7dNoia" style="box-sizing:border-box;width:100%;height:100%;">
+                        <div class="animation_container" style="width:100%;height:100%;">
+                            <div class="animated"
+                                style="width: 100%; height: 100%; animation: 2500ms ease 100ms 1 normal both running fade-LEFT-1e6004dd-7586-4af9-83d0-e49a628f5cf4;">
+                                <div id="UFAOuyxH0vL4Fmet"
+                                    style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                                    <p id="mmMO6SD8n2DHJ5ti"
+                                        style="color:#000000;font-family:YAFdJoNRMmU-0;line-height:0.99107231em;letter-spacing:0em;">
+                                        <span id="rpD6DSLwZfq6gORR" style="color:#000000;">Step 3. Install the VSCode
+                                            extension</span><br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="MGcuOqgefUdrcAvH" style="z-index:6;">
+                    <div id="rvAz1w4vpXFJybcM"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                        <div id="ocRJNLWO4vjMqUyH"
+                            style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                            <p id="CMlWGYMVusQ2o3dH"
+                                style="color:#253237;font-family:YAFdJoNRMmU-0;line-height:1.39285714em;text-transform:none;letter-spacing:0em;">
+                                <span id="H6aOkPpvZNx34kmM" style="color:#253237;">Visit the VSCode marketplace and
+                                    install the </span><a id="Al30rM3VzNjQ2sQI" target="_blank" rel="noopener"
+                                    href="/_link/?link=https%3A%2F%2Fmarketplace.visualstudio.com%2Fvscode&amp;target=CmAQEZ4MJ1W0DnkiYy6uCHK0OMxWesFKhLfjtSCKVo3I%2FldYFRtOjb2JrOqwogIC0%2FCH9mQAlAHhAgOxYbKBp7gIAFPZQeSaCJK9Dtq6KPGaif%2BdikaRVSDqm9jLAZVsQA89HO%2Fz8GkuV3pG08VCY0O%2F1nvU67YsR70ANNNjAa1u69QrJV46XGwZqwMbd4f9%2Fuy%2BNjJyj2vp70X8gYZQz6JbBNAdBMaEqKrWjrz9iporPWHCAQqLQ6hmaLrIv4bR6YqQYqqGoLCtCjiMcYjxtgVEvbmFZqvNqYOByl2VZMV0%2Fgj%2F9Qtmm27cmQnVimnZ4Zw2kzPhwGjeRsvfpf6ZlCDfn3nrf5aCJIW8G1ExSGMZNTO2jRaKxfKvzmGYVVNWNbkGO%2FL9BLCRXeTOK7CkU2foyaUws5Ho1QOxkD3vXwiCnejtJ6nprw3Qbhz917PR1%2BZilDE1HlMPESu80iJ2COVxM%2FyCzG9tZ9DtDwqymozF5YZmxLkPJFPLMvozHvFA5PyeksXKKGaqw%2BR5XlFpQaaymgPuVrgbsFLTbMqX76u1cy8G02pjFx25vF6GsxSpyZnPE7emjmJkZxeKtYnfhyLWUafdCryUX9nRoqR2UdnIzEmfb1daOPLADqIAP6ZPdnT9j4s%2FL3GorInIf6JgtIlHexhO2VFZm3j0EWR9ncE40C19mrlpNOLoG3MIgWYYrA0FxaIBxI2%2B5EmWVt6dwP%2Flbt4dPq%2F3ftBafBIau7K%2BZrt8kpdgslcrhJAiLohSaJ02RxEtMdV1I1JmpF2hcndWzseJfEazPIBzWpaGtWuD%2FLd%2F2AljVdA2&amp;iv=7urs13dpl8ZsmwD8"
+                                    style="text-decoration-line:underline;color:#253237;pointer-events:all;">Task
+                                    Samurai extension</a><span id="gs7thepPARbxrV0U" style="color:#253237;">. When
+                                    prompted during the installation flow, enter your Task Samurai API key.</span><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="rbOkzOojVfZ8MY6q" style="z-index:7;">
+                    <div id="R67TWlN8ANKeuQCM" style="box-sizing:border-box;width:100%;height:100%;">
+                        <div class="animation_container" style="width:100%;height:100%;">
+                            <div class="animated"
+                                style="width: 100%; height: 100%; animation: 2500ms ease 100ms 1 normal both running fade-LEFT-f27263b0-c423-4005-87df-3e351c9f3d2b;">
+                                <div id="n74p1eGLOMJUHXtM"
+                                    style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                                    <p id="mVruP7H4YdImi6aE"
+                                        style="color:#000000;font-family:YAFdJoNRMmU-0;line-height:0.99107231em;letter-spacing:0em;">
+                                        <span id="lYBdiBmqNUfMW5JO" style="color:#000000;">Step 4. Connect to Jira to
+                                            get recommendations on your Jira tickets</span><br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="JvMRUbtwoqKFx3af" style="z-index:8;">
+                    <div id="F3HrDkJqdld8VCI1"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                        <div id="caGO87Z6Pj0O7z9O"
+                            style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                            <p id="t2J4ryfGMgxTSntQ"
+                                style="color:#253237;font-family:YAFdJoNRMmU-0;line-height:1.39285714em;text-transform:none;letter-spacing:0em;">
+                                <span id="fYMaUjHuK11Tf2zl" style="color:#253237;">When prompted in VSCode, provide Task
+                                    Samurai OAuth access to your Jira account. This provides read-only access to the
+                                    Jira tickets you are working on so that Task Samurai can provide recommendations
+                                    based on your code and tickets history.</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="k6a03wW77D84qMUv" style="z-index:9;">
+                    <div id="oCarvRHHJqDI9FWC" style="box-sizing:border-box;width:100%;height:100%;">
+                        <div class="animation_container" style="width:100%;height:100%;">
+                            <div class="animated"
+                                style="width: 100%; height: 100%; animation: 2500ms ease 100ms 1 normal both running fade-LEFT-c47e23c4-c374-49d9-b49e-8bf81c55e3cb;">
+                                <div id="BAw19F1QJLuFKUPv"
+                                    style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                                    <p id="Aqm3zU3gU4w1iV9z"
+                                        style="color:#000000;font-family:YAFdJoNRMmU-0;line-height:0.99107231em;letter-spacing:0em;">
+                                        <span id="kzxafub7NXfPY54c" style="color:#000000;">Step 5. Have fun
+                                            coding!</span><br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="hYd0PyQv7c5BNL1C" style="z-index:10;">
+                    <div id="Hx8WLYpORDsFVw2H"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                        <div id="sNPY19U8hgXQZJaW"
+                            style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                            <p id="LTYv9zXLVHSmtFTw"
+                                style="color:#253237;font-family:YAFdJoNRMmU-0;line-height:1.39285714em;text-transform:none;letter-spacing:0em;">
+                                <span id="BLm7DFxbFhdNWdOx" style="color:#253237;">At this point you're ready to go! If
+                                    you encounter any issues, please use the links below to let us know!</span><br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><a id="page-3" aria-hidden="true" style="visibility:hidden;"></a>
+        <section id="LhqQ8WOnlcZViLYY"
+            style="position:relative;overflow:hidden;display:grid;align-items:center;grid-template-columns:auto 100rem auto;z-index:0;margin-top:-1px;">
+            <div id="gqpVTUXtLdyt4JBe"
+                style="grid-area:1 / 1 / 2 / 4;display:grid;position:absolute;min-height:100%;min-width:100%;">
+                <div id="j5FJO2hmSM5FlmsO" style="z-index:0;">
+                    <div id="Hg0l4pCvbLwmaWVw"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                        <div id="YOuhkfAn7FnGv9t0" style="width:100%;height:100%;opacity:1.0;">
+                            <div id="i3ZD5vsi3XCgXR0u"
+                                style="background-color:#0252b3;opacity:1.0;transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="BvIQwDK47Y0NX4G7" style="display:grid;position:relative;grid-area:1 / 2 / 2 / 3;">
+                <div id="curvnNCecgBJWVl6" style="z-index:4;">
+                    <div id="YPwxSx6eiEcCke5s" style="padding-top:100%;transform:rotate(0deg);">
+                        <div id="wfE8Jx1VrNZG5OnT" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
+                            <div id="klHeCCIRFsMVhm8X" style="width:100%;height:100%;opacity:1.0;">
+                                <div id="b5nABM2DdiK0VfMy"
+                                    style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                                    <div id="gGXCjPvrTrd8Lkak"
+                                        style="width: calc(100% * max(1, var(--scale-fill, 1))); height: calc(100% / min(1, var(--scale-fill, 1))); position: absolute; top: 50%; left: 50%; opacity: 1; animation: auto ease 0s 1 normal none running none;">
+                                        <img src="res/icons/samurai.png"
+                                            loading="lazy"
+                                            style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="KzAqYadoG4W1dxEE" style="z-index:1;">
+                    <div id="UnGgxuw8Bm0jnJU7" style="box-sizing:border-box;width:100%;height:100%;">
+                        <div class="animation_container" style="width:100%;height:100%;">
+                            <div class="animated"
+                                style="width: 100%; height: 100%; animation: 2631ms ease 100ms 1 normal both running fade-RIGHT-6bae4144-395c-4e22-85ad-b604616bf46e;">
+                                <div id="n1gmbZjJcysJ43tj"
+                                    style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                                    <p id="LZwgfkozTo0J2yKZ"
+                                        style="color:#ffffff;font-family:YAFdJoNRMmU-0;line-height:1em;letter-spacing:0em;">
+                                        <span id="amz76fiAhwnCOw55" style="color:#ffffff;font-weight:700;">Want to learn
+                                            more? Get in touch!</span><br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="l0YbVOWsN7GkokoP" style="z-index:3;">
+                    <div id="jy8xOAndJc2Xzyzz"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                        <div id="TUJ6GbGzOSCZ6zMY"
+                            style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                            <p id="uUFDyqO3x4tzy3Lt"
+                                style="color:#e8fff7;font-family:YAFdJoNRMmU-0;line-height:0.99999583em;text-transform:uppercase;letter-spacing:0em;">
+                                <span id="TrmUrQq0ZsZEN3j1" style="color:#e8fff7;font-weight:700;">Email</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="BzQZlmRE72bB8p1W" style="z-index:2;">
+                    <div id="yG9efOrzntCReB24"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                        <div id="T15ulPukVhZc00N4"
+                            style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                            <p id="GpY0GJ3NXswJLK5l"
+                                style="color:#ffffff;direction:ltr;font-family:YAFdJoNRMmU-0;margin-left:0em;line-height:1.45312727em;text-transform:none;letter-spacing:0em;">
+                                <a id="n9LlRthwLpqYgHI7" target="_blank" rel="noopener"
+                                    href="mailto:tasksamurai.team@gmail.com"
+                                    style="text-decoration-line:underline;color:#ffffff;pointer-events:all;">tasksamurai.team@gmail.com</a><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="vjbLV1BeqlmVTZr6" style="z-index:6;">
+                    <div id="nF0oD2CqgQgIVUPF"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                        <div id="kQYpt1nCT4KBleZK"
+                            style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                            <p id="KQYFRVrm7GfVyd4J"
+                                style="color:#e8fff7;font-family:YAFdJoNRMmU-0;line-height:0.99999583em;text-transform:uppercase;letter-spacing:0em;">
+                                <span id="i17ydtKU0mi0sj8P" style="color:#e8fff7;font-weight:700;">LINKEDIN</span><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="XZMMTyJdo8mOZyQl" style="z-index:5;">
+                    <div id="YEEI3liyRap3k9uG"
+                        style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
+                        <div id="RgeYARNwysBMkewk"
+                            style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
+                            <p id="ZTDpK4UBofHvngvs"
+                                style="color:#ffffff;direction:ltr;font-family:YAFdJoNRMmU-0;margin-left:0em;line-height:1.45312727em;text-transform:none;letter-spacing:0em;">
+                                <a id="fCRi5Rsh7WRcl7Vk" target="_blank" rel="noopener"
+                                    href="/_link/?link=https%3A%2F%2Flinkedin.com%2Fcompany%2Ftask-samurai&amp;target=UjDJLjYpjDkSsOWUaAvCqhkOTUXfv4Y0ryx7l%2FxV3HYLR3QQq42%2B%2F9kohvUB0GZEzXs7IW83MmxNM02q7DjlfM4b1TF%2FWruYisgIciLtiRjzl6BDhkSjs2Gbh1aFoz7SYjVI54p7xX8yovnwuVEMD%2B4WeCFjtsI2osokfa3N5Q5BpNGWqS0fwlk4%2B9y3W%2B04P8186hqVrxS3Kn1KaihQGF9nuJvRQ8qB3obD5zWrlLe4kTlhkvNi5enavisceoVJviAcpuQ5LQSIWdrsivCAsfkr%2B3jx%2FOFp1UvnNO7LXnsWk59jFgWaWjUKTdnaYkBkvqniNs85R5265y8jJblG9OxrAZoYr7HV8lJjgP%2BQXKTSlgn51bR9CwMmBSTGlQ1TtgV4waXJs8lGf4fDX9jsWVVup0FZDSeUjc6LLzjbvyreD%2Br1cExiguvxxkyEN0zMd3%2BNl9KWqbzXB3NtW48R5ujA2vgOOVu2Wmlz5%2BGFv6cmzRn91TCtS%2FFg%2FbaquzStBWra8mGSq2bK4Gdvr3%2BEd4IacLwMKkAn9UYq749aeUbY1fgr8eaEhZ6qhVkEX11XbzmKsexUnx71NpZh7mJlwsXPN7APfSs3oa%2BInaDOP99cdiAxNbnlQOnlCgyytnYgu9Yn0nfi5zHzn0WwJKhIKRx8ocCG1NGawlsJpa0xbXqykt5Pdh4r4tepa3O66uOJb0jwGB0Bu0zMBps%2Fz2pLFSYSxU5qw5NFCTa8whUPmLRcjoWtco%2FFJOMZdyDnXIHvb0nKDok5VH4jq5cjKGvu2kZz56jelzIR70AyjovJGBUyP2swDNvviA%3D%3D&amp;iv=gS2u32rgtGR1UbF8"
+                                    style="text-decoration-line:underline;color:#ffffff;font-weight:700;pointer-events:all;">linkedin.com/company/task-samurai</a><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script
+            nonce="">!function () { "use strict"; const e = Array.from(document.getElementsByTagName("img")), t = e => { const t = e.parentElement; t && (t.style.animation = "none") }; e.forEach((e => { e.complete ? t(e) : e.addEventListener("load", (() => { t(e) })) })) }();</script>
+        <script
+            nonce="">!function () { "use strict"; class t { constructor() { this.callbacks = [], window.addEventListener("DOMContentLoaded", (() => this.onDOMContentLoaded())) } onDOMContentLoaded() { this.callbacks.sort(((t, e) => t.priority - e.priority)).forEach((({ callback: t }) => t())) } runOnLoad(t) { "loading" === document.readyState ? this.callbacks.push(t) : t.callback() } } const e = async t => { const o = t.classList.contains("animated"), r = () => window.requestAnimationFrame((() => t.style.animationPlayState = "running")); o && n(t) ? (await a(t), r()) : o ? r() : null != t.firstElementChild && e(t.firstElementChild) }, n = t => { const e = t.getElementsByTagName("img").length > 0, n = t.getElementsByTagName("video").length > 0; return o(t) || e || n }, o = t => { var e; return !!(null === (e = t.textContent) || void 0 === e ? void 0 : e.trim().length) }, a = async t => { const e = [], n = t.getElementsByTagName("img"); for (let t = 0; t < n.length; t++) { const o = n.item(t); e.push(r(o)) } const o = t.getElementsByTagName("video"); for (let t = 0; t < o.length; t++) { const n = o.item(t); e.push(s(n)) } const a = new Map; document.fonts.forEach((t => a.set(`${t.family}_${t.style}_${t.weight}`, t))); const l = t.getElementsByTagName("span"); for (let t = 0; t < l.length; t++) { const n = l.item(t); e.push(i(n, a)) } return Promise.all(e) }, r = t => new Promise(((e, n) => { t.complete ? e() : (t.loading = "eager", t.addEventListener("load", (() => e())), t.addEventListener("error", (() => n()))) })), s = t => new Promise(((e, n) => { t.readyState >= 2 || t.poster ? e() : (t.addEventListener("loadeddata", (() => e())), t.addEventListener("error", (() => n()))) })), i = (t, e) => { const { fontFamily: n, fontStyle: o, fontWeight: a } = getComputedStyle(t), r = e.get(`${n}_${o}_${a}`); return (null == r ? void 0 : r.loaded) || document.fonts.ready }; !function (e, n = Number.MAX_VALUE) { var o; (window.canva_scriptExecutor = null !== (o = window.canva_scriptExecutor) && void 0 !== o ? o : new t).runOnLoad({ callback: e, priority: n }) }((() => { (() => { const t = document.querySelectorAll(".animation_container"); if (0 === t.length) return; const n = new IntersectionObserver((t => { t.forEach((t => { if (!t.isIntersecting) return; const o = t.target; e(o), n.unobserve(o) })) }), { threshold: .01 }); t.forEach((t => n.observe(t))) })() })) }();</script>
+        <script
+            nonce="">!function () { "use strict"; function t(t, n) { let e; return (...o) => { clearTimeout(e), e = setTimeout((() => { t(...o) }), n) } } class n { constructor() { this.callbacks = [], window.addEventListener("DOMContentLoaded", (() => this.onDOMContentLoaded())) } onDOMContentLoaded() { this.callbacks.sort(((t, n) => t.priority - n.priority)).forEach((({ callback: t }) => t())) } runOnLoad(t) { "loading" === document.readyState ? this.callbacks.push(t) : t.callback() } } function e(t, e = Number.MAX_VALUE) { var o; (window.canva_scriptExecutor = null !== (o = window.canva_scriptExecutor) && void 0 !== o ? o : new n).runOnLoad({ callback: t, priority: e }) } class o { constructor(t) { this.items = [], this.previousWidth = document.documentElement.clientWidth, this.previousHeight = window.innerHeight; const n = t((() => this.onWindowResize()), 100); window.addEventListener("resize", n) } onWindowResize() { const t = document.documentElement.clientWidth, n = window.innerHeight, e = this.previousWidth !== t, o = this.previousHeight !== n; this.items.forEach((t => { const n = () => { t.callback(), t.executed = !0 }; (!t.executed || e && t.options.runOnWidthChange || o && t.options.runOnHeightChange) && n() })), this.previousWidth = t, this.previousHeight = n } runOnResize(t, n) { this.items.push({ callback: t, options: n, executed: n.runOnLoad }), this.items.sort(((t, n) => t.options.priority - n.options.priority)), n.runOnLoad && e(t, n.priority) } } function i(n, e, i = t) { var r; (window.canva_debounceResize = null !== (r = window.canva_debounceResize) && void 0 !== r ? r : new o(i)).runOnResize(n, { runOnLoad: !1, runOnWidthChange: !0, runOnHeightChange: !1, priority: Number.MAX_VALUE, ...e }) } const r = "--minfs", c = "--rzf", u = "--rfso", s = "--bfso"; function a(t, n, e = .001) { return Math.abs(t - n) < e } function d(t, n) { return window.getComputedStyle(t).getPropertyValue(n) } function l(t, n, e) { t.style.setProperty(n, e) } function m(t, n) { const e = document.createElement("div"); e.style.setProperty(t, n), document.body.append(e); const o = d(e, t); return e.remove(), o } function f() { const t = function () { const t = parseFloat(m("font-size", "0.1px")); return t > 1 ? t : 0 }(), n = function (t) { const n = 2 * Math.max(t, 1); return n / parseFloat(m("font-size", `${n}px`)) }(t); if (function (t) { if (0 === t) return; l(document.documentElement, r, `${t}px`), i((() => { const n = 100 * t, { clientWidth: e } = document.documentElement; l(document.documentElement, c, n > e ? (e / n).toPrecision(4) : null) }), { runOnLoad: !0 }) }(t * Math.max(1, n)), a(n, 1)) return; const e = a(parseFloat(d(document.documentElement, "font-size")), parseFloat(m("grid-template-columns", "1rem"))); l(document.documentElement, e ? u : s, n.toPrecision(4)) } function h() { document.querySelectorAll("img, image, video, svg").forEach((t => t.addEventListener("contextmenu", (t => t.preventDefault())))) } const p = "--sbw", g = "--inner1Vh"; function w(t, n, e) { t.style.setProperty(n, e) } function v() { w(document.documentElement, g, window.innerHeight / 100 + "px"), function () { const t = window.innerWidth - document.documentElement.clientWidth; w(document.documentElement, p, t >= 0 ? `${t}px` : null) }() } var y; const E = "undefined" != typeof window ? null === (y = window.navigator) || void 0 === y ? void 0 : y.userAgent : void 0; const b = !(!E || (O = E, !O.match(/AppleWebKit\//) || O.match(/Chrome\//) || O.match(/Chromium\//))); var O; function L() { document.querySelectorAll("svg").forEach((t => t.style.background = "url('data:image/png;base64,')")) } let x; function A() { x || (x = Array.from(document.querySelectorAll("foreignObject")).filter((t => 0 === t.getBoundingClientRect().width))); const t = function () { const t = document.createElement("div"); t.style.fontSize = "100vw", document.body.append(t); const n = parseFloat(window.getComputedStyle(t).fontSize); return t.remove(), n / window.innerWidth }(); Array.from(x).forEach((n => function (t) { return new Promise(((n, e) => { const o = t.querySelector("img"); o && !o.complete ? (o.addEventListener("load", (() => n())), o.addEventListener("error", (() => e()))) : n() })) }(n).finally((() => function (t, n) { const e = Array.from(t.children); e.forEach(((t, n) => { if (t.hasAttribute("data-foreign-object-container")) t.style.transformOrigin = "", t.style.transform = ""; else { const o = document.createElement("div"); o.setAttribute("data-foreign-object-container", ""), t.insertAdjacentElement("beforebegin", o), t.remove(), o.append(t), e[n] = o } })); const o = t.getScreenCTM(); if (!o) return; const { a: i, b: r, c: c, d: u } = o.scale(n); e.forEach((t => { if (!t.hasAttribute("data-foreign-object-container")) return; const { style: n } = t; n.transformOrigin = "0px 0px", n.transform = `matrix(${i}, ${r}, ${c}, ${u}, 0, 0)` })) }(n, t))))) } [function () { e(f) }, function () { i(v, { runOnLoad: !0, runOnHeightChange: !0, priority: 1 }) }, function () { b && i(A, { runOnLoad: !0 }) }, function () { b && e(L) }, function () { e(h) }].forEach((t => t())) }();</script>
+    </div>
+    <script
+        nonce="">(function () { var js = "window['__CF$cv$params']={r:'854e5092a4f07110',t:'MTcwNzg0MDM0Ni4xNjYwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);"; var _0xh = document.createElement('iframe'); _0xh.height = 1; _0xh.width = 1; _0xh.style.position = 'absolute'; _0xh.style.top = 0; _0xh.style.left = 0; _0xh.style.border = 'none'; _0xh.style.visibility = 'hidden'; document.body.appendChild(_0xh); function handler() { var _0xi = _0xh.contentDocument || _0xh.contentWindow.document; if (_0xi) { var _0xj = _0xi.createElement('script'); _0xj.innerHTML = js; _0xi.getElementsByTagName('head')[0].appendChild(_0xj); } } if (document.readyState !== 'loading') { handler(); } else if (window.addEventListener) { document.addEventListener('DOMContentLoaded', handler); } else { var prev = document.onreadystatechange || function () { }; document.onreadystatechange = function (e) { prev(e); if (document.readyState !== 'loading') { document.onreadystatechange = prev; handler(); } }; } })();</script>
+    <iframe height="1" width="1"
+        style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+</body>
+
+</html>
