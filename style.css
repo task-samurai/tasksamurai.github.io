@@ -676,6 +676,23 @@ body{
     max-width: 1320px;
   }
 }
+@media (max-width: 800px){
+
+  .hide-in-mobile{
+    display: none;
+  }
+
+  div.mobile_h-\[300px\]{
+    height: 300px;
+  }
+
+  h1.header-dynamic-text {
+    min-height: 80px;
+  }
+}
+.header-dynamic-text {
+  min-height: 120px;
+}
 html{
   scroll-behavior: smooth;
 }
